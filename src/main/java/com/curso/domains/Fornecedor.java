@@ -1,10 +1,14 @@
 package com.curso.domains;
 
+import com.curso.domains.dtos.FornecedorDTO;
 import com.curso.domains.enums.Status;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Objects;
 
 @Entity
@@ -37,7 +41,12 @@ public class Fornecedor {
     @JoinColumn(name = "status")
     private Status status;
 
+    @JsonIgnore
+    @OneToMany(mappedBy = "fornecedor")
+    private List<Componente> componentes = new ArrayList<>();
+
     public Fornecedor() {
+        this.status = Status.ATIVO;
     }
 
     public Fornecedor(Integer idFornecedor, String razaoSocial, String cnpj, String pais, String estado, String cidade, String endereco, Status status) {
@@ -49,6 +58,17 @@ public class Fornecedor {
         this.cidade = cidade;
         this.endereco = endereco;
         this.status = status;
+    }
+
+    public Fornecedor(FornecedorDTO dto){
+        this.idFornecedor = dto.getIdForncedor();
+        this.razaoSocial = dto.getRazaoSocial();
+        this.cnpj = dto.getCnpj();
+        this.pais = dto.getPais();
+        this.estado = dto.getEstado();
+        this.cidade = dto.getCidade();
+        this.endereco = dto.getEndereco();
+        this.status = Status.toEnum(dto.getStatus());
     }
 
     public Integer getIdFornecedor() {
@@ -113,6 +133,14 @@ public class Fornecedor {
 
     public void setStatus(Status status) {
         this.status = status;
+    }
+
+    public List<Componente> getComponentes() {
+        return componentes;
+    }
+
+    public void setComponentes(List<Componente> componentes) {
+        this.componentes = componentes;
     }
 
     @Override
