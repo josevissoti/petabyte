@@ -19,22 +19,28 @@ public class Fornecedor {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_fornecedor")
     private Integer idFornecedor;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String razaoSocial;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String cnpj;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String pais;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String estado;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String cidade;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String endereco;
 
     @Enumerated(EnumType.ORDINAL)
@@ -60,7 +66,7 @@ public class Fornecedor {
         this.status = status;
     }
 
-    public Fornecedor(FornecedorDTO dto){
+    public Fornecedor(FornecedorDTO dto) {
         this.idFornecedor = dto.getIdForncedor();
         this.razaoSocial = dto.getRazaoSocial();
         this.cnpj = dto.getCnpj();

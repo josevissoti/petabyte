@@ -3,6 +3,7 @@ package com.curso.services;
 import com.curso.domains.Fornecedor;
 import com.curso.domains.dtos.FornecedorDTO;
 import com.curso.repositories.FornecedorRepository;
+import com.curso.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -16,23 +17,23 @@ public class FornecedorService {
     @Autowired
     private FornecedorRepository fornecedorRepo;
 
-    public List<FornecedorDTO> findAll(){
+    public List<FornecedorDTO> findAll() {
         return fornecedorRepo.findAll().stream()
                 .map(obj -> new FornecedorDTO(obj))
                 .collect(Collectors.toList());
     }
 
-    public Fornecedor findById(int id){
+    public Fornecedor findById(int id) {
         Optional<Fornecedor> obj = fornecedorRepo.findById(id);
-        return obj.orElse(null);
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Fornecedor não encontrado. ID: " + id));
     }
 
-    public Fornecedor findByRazaoSocial(String razaoSocial){
+    public Fornecedor findByRazaoSocial(String razaoSocial) {
         Optional<Fornecedor> obj = fornecedorRepo.findByRazaoSocial(razaoSocial);
-        return obj.orElse(null);
+        return obj.orElseThrow(() -> new ObjectNotFoundException("Fornecedor não encontrado. Razão social: " + razaoSocial));
     }
 
-    public Fornecedor create(FornecedorDTO dto){
+    public Fornecedor create(FornecedorDTO dto) {
         dto.setIdForncedor(null);
         Fornecedor obj = new Fornecedor(dto);
         return fornecedorRepo.save(obj);

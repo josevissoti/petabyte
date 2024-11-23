@@ -29,10 +29,10 @@ public enum Status {
         this.situacao = situacao;
     }
 
-    public static Status toEnum(Integer idStatus){
-        if(idStatus == null) return null;
-        for(Status x : Status.values()){
-            if(idStatus.equals(x.getIdStatus())){
+    public static Status toEnum(Integer idStatus) {
+        if (idStatus == null) return null;
+        for (Status x : Status.values()) {
+            if (idStatus.equals(x.getIdStatus())) {
                 return x;
             }
         }

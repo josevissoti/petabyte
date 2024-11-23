@@ -20,18 +20,18 @@ public class ComponenteResource {
     private ComponenteService componenteService;
 
     @GetMapping
-    public ResponseEntity<List<ComponenteDTO>> findAll(){
+    public ResponseEntity<List<ComponenteDTO>> findAll() {
         return ResponseEntity.ok().body(componenteService.findAll());
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<ComponenteDTO> findById(@PathVariable Long id){
+    public ResponseEntity<ComponenteDTO> findById(@PathVariable Long id) {
         Componente obj = this.componenteService.findById(id);
         return ResponseEntity.ok().body(new ComponenteDTO(obj));
     }
 
     @GetMapping(value = "/descricao/{descricao}")
-    public ResponseEntity<ComponenteDTO> findByDescricao(@PathVariable String descricao){
+    public ResponseEntity<ComponenteDTO> findByDescricao(@PathVariable String descricao) {
         Componente obj = this.componenteService.findByDescricao(descricao);
         return ResponseEntity.ok().body(new ComponenteDTO(obj));
     }

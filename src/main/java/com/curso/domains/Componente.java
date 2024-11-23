@@ -20,10 +20,12 @@ public class Componente {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_componente")
     private Long idComponente;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String descricao;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String modelo;
 
     @JsonFormat(pattern = "dd/MM/yyyy")

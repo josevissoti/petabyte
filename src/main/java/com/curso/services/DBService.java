@@ -27,7 +27,7 @@ public class DBService {
     @Autowired
     private ComponenteRepository componenteRepo;
 
-    public void initDB(){
+    public void initDB() {
 
         CategoriaComponente categoriaComponente01 = new CategoriaComponente(null, "SSD");
         CategoriaComponente categoriaComponente02 = new CategoriaComponente(null, "Processador");

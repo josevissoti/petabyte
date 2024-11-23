@@ -18,7 +18,8 @@ public class CategoriaComponente {
     @GeneratedValue(strategy = GenerationType.AUTO, generator = "seq_categoriacomponente")
     private Integer idCategoriaComponente;
 
-    @NotBlank @NotNull
+    @NotBlank
+    @NotNull
     private String descricao;
 
     @JsonIgnore
@@ -33,7 +34,7 @@ public class CategoriaComponente {
         this.descricao = descricao;
     }
 
-    public CategoriaComponente(CategoriaComponenteDTO dto){
+    public CategoriaComponente(CategoriaComponenteDTO dto) {
         this.idCategoriaComponente = dto.getIdCategoriaComponente();
         this.descricao = dto.getDescricao();
     }

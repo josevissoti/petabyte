@@ -29,10 +29,10 @@ public enum Condicao {
         this.situacao = situacao;
     }
 
-    public static Condicao toEnum(Integer idCondicao){
-        if(idCondicao == null) return null;
-        for(Condicao x : Condicao.values()){
-            if(idCondicao.equals(x)){
+    public static Condicao toEnum(Integer idCondicao) {
+        if (idCondicao == null) return null;
+        for (Condicao x : Condicao.values()) {
+            if (idCondicao.equals(x)) {
                 return x;
             }
         }

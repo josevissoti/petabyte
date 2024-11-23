@@ -19,24 +19,24 @@ public class CategoriaComponenteResource {
     private CategoriaComponenteService categoriaComponenteService;
 
     @GetMapping
-    public ResponseEntity<List<CategoriaComponenteDTO>> findAll(){
+    public ResponseEntity<List<CategoriaComponenteDTO>> findAll() {
         return ResponseEntity.ok().body(categoriaComponenteService.findAll());
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<CategoriaComponenteDTO> findById(@PathVariable Integer id){
+    public ResponseEntity<CategoriaComponenteDTO> findById(@PathVariable Integer id) {
         CategoriaComponente obj = this.categoriaComponenteService.findById(id);
         return ResponseEntity.ok().body(new CategoriaComponenteDTO(obj));
     }
 
     @GetMapping(value = "/descricao/{descricao}")
-    public ResponseEntity<CategoriaComponenteDTO> findByDescricao(@PathVariable String descricao){
+    public ResponseEntity<CategoriaComponenteDTO> findByDescricao(@PathVariable String descricao) {
         CategoriaComponente obj = this.categoriaComponenteService.findByDescricao(descricao);
         return ResponseEntity.ok().body(new CategoriaComponenteDTO(obj));
     }
 
     @PostMapping
-    public  ResponseEntity<CategoriaComponenteDTO> create(@RequestBody CategoriaComponenteDTO dto){
+    public ResponseEntity<CategoriaComponenteDTO> create(@RequestBody CategoriaComponenteDTO dto) {
         CategoriaComponente categoriaComponente = categoriaComponenteService.create(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("/{id}")
                 .buildAndExpand(categoriaComponente.getIdCategoriaComponente()).toUri();

@@ -14,7 +14,7 @@ public class TestConfig {
     private DBService dbService;
 
     @PostConstruct
-    public void initDB(){
+    public void initDB() {
         this.dbService.initDB();
     }
 

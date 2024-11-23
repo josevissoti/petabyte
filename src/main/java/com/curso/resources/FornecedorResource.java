@@ -19,24 +19,24 @@ public class FornecedorResource {
     private FornecedorService fornecedorService;
 
     @GetMapping
-    public ResponseEntity<List<FornecedorDTO>> findAll(){
+    public ResponseEntity<List<FornecedorDTO>> findAll() {
         return ResponseEntity.ok().body(fornecedorService.findAll());
     }
 
     @GetMapping(value = "/{id}")
-    public ResponseEntity<FornecedorDTO> findById(@PathVariable Integer id){
+    public ResponseEntity<FornecedorDTO> findById(@PathVariable Integer id) {
         Fornecedor obj = this.fornecedorService.findById(id);
         return ResponseEntity.ok().body(new FornecedorDTO(obj));
     }
 
     @GetMapping(value = "/razaoSocial/{razaoSocial}")
-    public ResponseEntity<FornecedorDTO> findByRazaoSocial(@PathVariable String razaoSocial){
+    public ResponseEntity<FornecedorDTO> findByRazaoSocial(@PathVariable String razaoSocial) {
         Fornecedor obj = this.fornecedorService.findByRazaoSocial(razaoSocial);
         return ResponseEntity.ok().body(new FornecedorDTO(obj));
     }
 
     @PostMapping
-    public ResponseEntity<FornecedorDTO> create(@RequestBody FornecedorDTO dto){
+    public ResponseEntity<FornecedorDTO> create(@RequestBody FornecedorDTO dto) {
         Fornecedor fornecedor = fornecedorService.create(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("{/id}")
                 .buildAndExpand(fornecedor.getIdFornecedor()).toUri();
