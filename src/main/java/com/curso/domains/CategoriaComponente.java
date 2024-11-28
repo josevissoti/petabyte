@@ -20,6 +20,7 @@ public class CategoriaComponente {
 
     @NotBlank
     @NotNull
+    @Column(unique = true)
     private String descricao;
 
     @JsonIgnore

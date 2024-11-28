@@ -3,6 +3,7 @@ package com.curso.resources;
 import com.curso.domains.Fornecedor;
 import com.curso.domains.dtos.FornecedorDTO;
 import com.curso.services.FornecedorService;
+import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -36,11 +37,23 @@ public class FornecedorResource {
     }
 
     @PostMapping
-    public ResponseEntity<FornecedorDTO> create(@RequestBody FornecedorDTO dto) {
+    public ResponseEntity<FornecedorDTO> create(@Valid @RequestBody FornecedorDTO dto) {
         Fornecedor fornecedor = fornecedorService.create(dto);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest().path("{/id}")
                 .buildAndExpand(fornecedor.getIdFornecedor()).toUri();
         return ResponseEntity.created(uri).build();
+    }
+
+    @PutMapping(value = "/{id}")
+    public ResponseEntity<FornecedorDTO> update(@PathVariable Integer id, @Valid @RequestBody FornecedorDTO objDto){
+        Fornecedor Obj = fornecedorService.update(id, objDto);
+        return ResponseEntity.ok().body(new FornecedorDTO(Obj));
+    }
+
+    @DeleteMapping(value = "/{id}")
+    public ResponseEntity<FornecedorDTO> delete(@PathVariable Integer id){
+        fornecedorService.delete(id);
+        return ResponseEntity.noContent().build();
     }
 
 }

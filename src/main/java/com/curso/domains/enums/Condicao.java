@@ -32,7 +32,7 @@ public enum Condicao {
     public static Condicao toEnum(Integer idCondicao) {
         if (idCondicao == null) return null;
         for (Condicao x : Condicao.values()) {
-            if (idCondicao.equals(x)) {
+            if (idCondicao.equals(x.getIdCondicao())) {
                 return x;
             }
         }

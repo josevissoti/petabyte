@@ -24,9 +24,11 @@ public class ComponenteDTO {
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataFabricacao;
 
+    @NotNull(message = "O campo valor não pode ser nulo")
     @Digits(integer = 15, fraction = 2)
     private BigDecimal valor;
 
+    @NotNull(message = "O campo desconto não pode ser nulo")
     @Digits(integer = 3, fraction = 2)
     private BigDecimal desconto;
 

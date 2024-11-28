@@ -25,6 +25,7 @@ public class Fornecedor {
 
     @NotBlank
     @NotNull
+    @Column(unique = true)
     private String cnpj;
 
     @NotBlank

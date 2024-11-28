@@ -1,5 +1,6 @@
 package com.curso.domains;
 
+import com.curso.domains.dtos.ComponenteDTO;
 import com.curso.domains.enums.Condicao;
 import com.curso.domains.enums.Status;
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -22,6 +23,7 @@ public class Componente {
 
     @NotBlank
     @NotNull
+    @Column(unique = true)
     private String descricao;
 
     @NotBlank
@@ -36,6 +38,9 @@ public class Componente {
 
     @Digits(integer = 3, fraction = 2)
     private BigDecimal desconto;
+
+    @Digits(integer = 15, fraction = 2)
+    private BigDecimal valorDesconto;
 
     private int estoque;
 
@@ -56,6 +61,11 @@ public class Componente {
     private Condicao condicao;
 
     public Componente() {
+        this.valor = BigDecimal.ZERO;
+        this.desconto = BigDecimal.ZERO;
+        this.valorDesconto = BigDecimal.ZERO;
+        this.status = Status.ATIVO;
+        this.condicao = Condicao.NOVO;
     }
 
     public Componente(Long idComponente, String descricao, String modelo, LocalDate dataFabricacao, BigDecimal valor, BigDecimal desconto, int estoque, CategoriaComponente categoriaComponente, Fornecedor fornecedor, Status status, Condicao condicao) {
@@ -70,6 +80,31 @@ public class Componente {
         this.fornecedor = fornecedor;
         this.status = status;
         this.condicao = condicao;
+
+        this.valorDesconto = valor.subtract(valor.multiply(desconto.divide(new BigDecimal(100))))
+                .setScale(2, BigDecimal.ROUND_HALF_UP);
+    }
+
+    public Componente(ComponenteDTO dto){
+        this.idComponente = dto.getIdComponente();
+        this.descricao = dto.getDescricao();
+        this.modelo = dto.getModelo();
+        this.dataFabricacao = dto.getDataFabricacao();
+        this.valor = dto.getValor();
+        this.desconto = dto.getDesconto();
+        this.estoque = dto.getEstoque();
+
+        this.status = Status.toEnum(dto.getStatus());
+        this.condicao = Condicao.toEnum(dto.getCondicao());
+
+        this.categoriaComponente = new CategoriaComponente();
+        this.categoriaComponente.setIdCategoriaComponente(dto.getCategoriaComponente());
+
+        this.fornecedor = new Fornecedor();
+        this.fornecedor.setIdFornecedor(dto.getFornecedor());
+
+        this.valorDesconto = valor.subtract(valor.multiply(desconto.divide(new BigDecimal(100))))
+                .setScale(2, BigDecimal.ROUND_HALF_UP);
     }
 
     public Long getIdComponente() {
@@ -118,6 +153,14 @@ public class Componente {
 
     public void setDesconto(BigDecimal desconto) {
         this.desconto = desconto;
+    }
+
+    public BigDecimal getValorDesconto() {
+        return valorDesconto;
+    }
+
+    public void setValorDesconto(BigDecimal valorDesconto) {
+        this.valorDesconto = valorDesconto;
     }
 
     public int getEstoque() {
