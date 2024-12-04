@@ -32,6 +32,10 @@ public class ComponenteDTO {
     @Digits(integer = 3, fraction = 2)
     private BigDecimal desconto;
 
+    @NotNull(message = "O campo valor não pode ser nulo")
+    @Digits(integer = 15, fraction = 2)
+    private BigDecimal valorDesconto;
+
     private int estoque;
 
     @NotNull(message = "O campo Categoria Componente é requerido")
@@ -60,6 +64,7 @@ public class ComponenteDTO {
         this.dataFabricacao = componente.getDataFabricacao();
         this.valor = componente.getValor();
         this.desconto = componente.getDesconto();
+        this.valorDesconto = componente.getValorDesconto();
         this.estoque = componente.getEstoque();
         this.categoriaComponente = componente.getCategoriaComponente().getIdCategoriaComponente();
         this.descricaoCategoriaComponente = componente.getCategoriaComponente().getDescricao();
@@ -120,6 +125,14 @@ public class ComponenteDTO {
 
     public void setDesconto(@Digits(integer = 3, fraction = 2) BigDecimal desconto) {
         this.desconto = desconto;
+    }
+
+    public @NotNull(message = "O campo valor não pode ser nulo") @Digits(integer = 15, fraction = 2) BigDecimal getValorDesconto() {
+        return valorDesconto;
+    }
+
+    public void setValorDesconto(@NotNull(message = "O campo valor não pode ser nulo") @Digits(integer = 15, fraction = 2) BigDecimal valorDesconto) {
+        this.valorDesconto = valorDesconto;
     }
 
     public int getEstoque() {
