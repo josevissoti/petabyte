@@ -32,7 +32,6 @@ public class ComponenteDTO {
     @Digits(integer = 3, fraction = 2)
     private BigDecimal desconto;
 
-    @NotNull(message = "O campo valor não pode ser nulo")
     @Digits(integer = 15, fraction = 2)
     private BigDecimal valorDesconto;
 
@@ -127,11 +126,11 @@ public class ComponenteDTO {
         this.desconto = desconto;
     }
 
-    public @NotNull(message = "O campo valor não pode ser nulo") @Digits(integer = 15, fraction = 2) BigDecimal getValorDesconto() {
+    public @Digits(integer = 15, fraction = 2) BigDecimal getValorDesconto() {
         return valorDesconto;
     }
 
-    public void setValorDesconto(@NotNull(message = "O campo valor não pode ser nulo") @Digits(integer = 15, fraction = 2) BigDecimal valorDesconto) {
+    public void setValorDesconto(@Digits(integer = 15, fraction = 2) BigDecimal valorDesconto) {
         this.valorDesconto = valorDesconto;
     }
 

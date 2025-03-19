@@ -1,191 +1,191 @@
-2024-12-04T13:12:38.470-03:00  INFO 2640 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : Starting PetabyteApplication using Java 17.0.12 with PID 2640 (C:\Users\josev\OneDrive\Documentos\Informatica\Projetos\petabyte\target\classes started by josev in C:\Users\josev\OneDrive\Documentos\Informatica\Projetos\petabyte)
-2024-12-04T13:12:38.494-03:00  INFO 2640 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : The following 1 profile is active: "test"
-2024-12-04T13:12:38.819-03:00  INFO 2640 --- [petabyte] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2024-12-04T13:12:38.819-03:00  INFO 2640 --- [petabyte] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2024-12-04T13:12:41.748-03:00  INFO 2640 --- [petabyte] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2024-12-04T13:12:42.101-03:00  INFO 2640 --- [petabyte] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 311 ms. Found 3 JPA repository interfaces.
-2024-12-04T13:12:46.094-03:00  INFO 2640 --- [petabyte] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
-2024-12-04T13:12:46.151-03:00  INFO 2640 --- [petabyte] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
-2024-12-04T13:12:46.159-03:00  INFO 2640 --- [petabyte] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
-2024-12-04T13:12:46.494-03:00  INFO 2640 --- [petabyte] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
-2024-12-04T13:12:46.494-03:00  INFO 2640 --- [petabyte] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 7675 ms
-2024-12-04T13:12:46.667-03:00  INFO 2640 --- [petabyte] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
-2024-12-04T13:12:47.914-03:00  INFO 2640 --- [petabyte] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:petabytedb user=SA
-2024-12-04T13:12:47.922-03:00  INFO 2640 --- [petabyte] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
-2024-12-04T13:12:47.971-03:00  INFO 2640 --- [petabyte] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:petabytedb'
-2024-12-04T13:12:48.702-03:00  INFO 2640 --- [petabyte] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
-2024-12-04T13:12:48.989-03:00  INFO 2640 --- [petabyte] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
-2024-12-04T13:12:49.162-03:00  INFO 2640 --- [petabyte] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
-2024-12-04T13:12:49.599-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2d17174f
-2024-12-04T13:12:49.599-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2d17174f
-2024-12-04T13:12:49.599-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@2d17174f
-2024-12-04T13:12:49.599-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@66099054
-2024-12-04T13:12:49.599-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@66099054
-2024-12-04T13:12:49.599-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@5a74b6be
-2024-12-04T13:12:49.607-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@5a74b6be
-2024-12-04T13:12:49.607-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@614362f4
-2024-12-04T13:12:49.607-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@614362f4
-2024-12-04T13:12:49.607-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@74fbbcfc
-2024-12-04T13:12:49.607-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@74fbbcfc
-2024-12-04T13:12:49.607-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@74fbbcfc
-2024-12-04T13:12:49.615-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@5e5a1907
-2024-12-04T13:12:49.623-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@5e5a1907
-2024-12-04T13:12:49.631-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@5e5a1907
-2024-12-04T13:12:49.631-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@72ff4cf7
-2024-12-04T13:12:49.631-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@72ff4cf7
-2024-12-04T13:12:49.631-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@7c63e18e
-2024-12-04T13:12:49.631-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@792b9613
-2024-12-04T13:12:49.631-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@792b9613
-2024-12-04T13:12:49.631-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@72d39d7f
-2024-12-04T13:12:49.631-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@7a43ff26
-2024-12-04T13:12:49.639-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@19cf0e71
-2024-12-04T13:12:49.639-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@19cf0e71
-2024-12-04T13:12:49.639-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@19cf0e71
-2024-12-04T13:12:49.639-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@3cf18855
-2024-12-04T13:12:49.639-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@3cf18855
-2024-12-04T13:12:49.647-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@3cf18855
-2024-12-04T13:12:49.655-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@5227d2d1
-2024-12-04T13:12:49.655-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@5227d2d1
-2024-12-04T13:12:49.663-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@5227d2d1
-2024-12-04T13:12:49.663-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@37f8bd7c
-2024-12-04T13:12:49.663-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@37f8bd7c
-2024-12-04T13:12:49.663-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@37f8bd7c
-2024-12-04T13:12:49.663-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@56a59174
-2024-12-04T13:12:49.663-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@56a59174
-2024-12-04T13:12:49.671-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@56a59174
-2024-12-04T13:12:49.671-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@66a608d5
-2024-12-04T13:12:49.671-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@66a608d5
-2024-12-04T13:12:49.671-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@afbff8a
-2024-12-04T13:12:49.671-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@afbff8a
-2024-12-04T13:12:49.679-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@789ab0f4
-2024-12-04T13:12:49.679-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@789ab0f4
-2024-12-04T13:12:49.679-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@789ab0f4
-2024-12-04T13:12:49.679-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@2cea0a2
-2024-12-04T13:12:49.687-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@54f8e08e
-2024-12-04T13:12:49.687-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@54f8e08e
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@12a5234
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@2c9a5ff5
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@2c9a5ff5
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@2c9a5ff5
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@5b263174
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@48c9460e
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@1b2116d1
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@653a97b7
-2024-12-04T13:12:49.695-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@653a97b7
-2024-12-04T13:12:49.703-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@f7db7f5
-2024-12-04T13:12:49.703-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@f7db7f5
-2024-12-04T13:12:49.703-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@d067922
-2024-12-04T13:12:49.703-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@1e0261cd
-2024-12-04T13:12:49.703-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@2fb4ca95
-2024-12-04T13:12:49.703-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@4d941289
-2024-12-04T13:12:49.703-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@73e5ad70
-2024-12-04T13:12:49.711-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@7ee4a6c8
-2024-12-04T13:12:49.711-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@778d2be3
-2024-12-04T13:12:49.711-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@778d2be3
-2024-12-04T13:12:49.711-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@1ae06fc1
-2024-12-04T13:12:49.711-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@1ae06fc1
-2024-12-04T13:12:49.719-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@4430dfc0
-2024-12-04T13:12:49.719-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@4430dfc0
-2024-12-04T13:12:49.719-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@1fb9f368
-2024-12-04T13:12:49.719-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@1fb9f368
-2024-12-04T13:12:49.719-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@1f5014f
-2024-12-04T13:12:49.719-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@1f5014f
-2024-12-04T13:12:49.727-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@18f2f8d7
-2024-12-04T13:12:49.727-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@5a7efad6
-2024-12-04T13:12:49.727-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@a0c7042
-2024-12-04T13:12:49.727-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@a0c7042
-2024-12-04T13:12:49.727-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@235ae735
-2024-12-04T13:12:49.727-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@2c6197c9
-2024-12-04T13:12:49.727-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@1e470d9
-2024-12-04T13:12:49.727-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@68839ec7
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@68839ec7
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@1c14afad
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@3cebac39
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@1eab71c5
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@1eab71c5
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@6a2aa171
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@6a2aa171
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@53fa125e
-2024-12-04T13:12:49.735-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@53fa125e
-2024-12-04T13:12:49.743-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@53fa125e
-2024-12-04T13:12:49.743-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@3211f67c
-2024-12-04T13:12:49.743-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@3211f67c
-2024-12-04T13:12:49.743-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@3211f67c
-2024-12-04T13:12:49.751-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@77718ca2
-2024-12-04T13:12:49.751-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@48ef8a14
-2024-12-04T13:12:49.751-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@4b0419b5
-2024-12-04T13:12:49.751-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@4b0419b5
-2024-12-04T13:12:49.751-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@761ba4bf
-2024-12-04T13:12:49.751-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@761ba4bf
-2024-12-04T13:12:49.751-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@761ba4bf
-2024-12-04T13:12:49.759-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@df43242
-2024-12-04T13:12:49.767-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@39ffa6c2
-2024-12-04T13:12:49.767-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@525dc9f9
-2024-12-04T13:12:49.767-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@525dc9f9
-2024-12-04T13:12:49.767-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@7948b151
-2024-12-04T13:12:49.767-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@7948b151
-2024-12-04T13:12:49.775-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@7948b151
-2024-12-04T13:12:49.783-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@5582ea18
-2024-12-04T13:12:49.799-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@5582ea18
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@110f9fdc
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@110f9fdc
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@2d218e05
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@2d218e05
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@115f70c9
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@115f70c9
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@53cf9ad0
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@53cf9ad0
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@3e530e0a
-2024-12-04T13:12:49.807-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@1f23ee63
-2024-12-04T13:12:49.951-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@7962e151
-2024-12-04T13:12:49.967-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@7962e151
-2024-12-04T13:12:50.007-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@74b10151
-2024-12-04T13:12:50.007-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@238a7594
-2024-12-04T13:12:50.007-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@15f3f973
-2024-12-04T13:12:50.007-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@332ee921
-2024-12-04T13:12:50.007-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@4fe9dd9c
-2024-12-04T13:12:50.007-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@3fbf2720
-2024-12-04T13:12:50.007-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@358d79c5
-2024-12-04T13:12:50.015-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@71aef9b4
-2024-12-04T13:12:50.015-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@70aacf20
-2024-12-04T13:12:51.260-03:00  INFO 2640 --- [petabyte] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
-2024-12-04T13:12:51.625-03:00 DEBUG 2640 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
-2024-12-04T13:12:51.633-03:00 DEBUG 2640 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
-2024-12-04T13:12:51.633-03:00 DEBUG 2640 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
-2024-12-04T13:12:51.643-03:00 DEBUG 2640 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
-2024-12-04T13:12:51.643-03:00 DEBUG 2640 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
-2024-12-04T13:12:51.651-03:00 DEBUG 2640 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
-2024-12-04T13:12:51.676-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
-2024-12-04T13:12:51.676-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
-2024-12-04T13:12:51.676-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
-2024-12-04T13:12:51.692-03:00 DEBUG 2640 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@aa152de] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@9931266]
-2024-12-04T13:12:55.555-03:00  INFO 2640 --- [petabyte] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
-2024-12-04T13:12:55.555-03:00 DEBUG 2640 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@aa152de] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@4e85cdf2]
-2024-12-04T13:12:55.618-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:13.508-03:00  INFO 6884 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : Starting PetabyteApplication using Java 17.0.13 with PID 6884 (C:\Users\josev\OneDrive\Documentos\Projects\Spring\petabyte\target\classes started by josev in C:\Users\josev\OneDrive\Documentos\Projects\Spring\petabyte)
+2025-03-19T13:31:13.521-03:00  INFO 6884 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : The following 1 profile is active: "test"
+2025-03-19T13:31:13.675-03:00  INFO 6884 --- [petabyte] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-19T13:31:13.676-03:00  INFO 6884 --- [petabyte] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-19T13:31:14.985-03:00  INFO 6884 --- [petabyte] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-19T13:31:15.074-03:00  INFO 6884 --- [petabyte] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 75 ms. Found 3 JPA repository interfaces.
+2025-03-19T13:31:17.186-03:00  INFO 6884 --- [petabyte] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-19T13:31:17.208-03:00  INFO 6884 --- [petabyte] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-19T13:31:17.208-03:00  INFO 6884 --- [petabyte] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-03-19T13:31:17.374-03:00  INFO 6884 --- [petabyte] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-19T13:31:17.375-03:00  INFO 6884 --- [petabyte] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 3698 ms
+2025-03-19T13:31:17.440-03:00  INFO 6884 --- [petabyte] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-19T13:31:17.817-03:00  INFO 6884 --- [petabyte] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:petabytedb user=SA
+2025-03-19T13:31:17.820-03:00  INFO 6884 --- [petabyte] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-19T13:31:17.841-03:00  INFO 6884 --- [petabyte] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:petabytedb'
+2025-03-19T13:31:18.074-03:00  INFO 6884 --- [petabyte] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-19T13:31:18.169-03:00  INFO 6884 --- [petabyte] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-03-19T13:31:18.235-03:00  INFO 6884 --- [petabyte] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-19T13:31:18.432-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@32235f1
+2025-03-19T13:31:18.433-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@32235f1
+2025-03-19T13:31:18.433-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@32235f1
+2025-03-19T13:31:18.434-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@5112e017
+2025-03-19T13:31:18.434-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@5112e017
+2025-03-19T13:31:18.434-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@67d34f0b
+2025-03-19T13:31:18.434-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@67d34f0b
+2025-03-19T13:31:18.434-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@69af1e47
+2025-03-19T13:31:18.434-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@69af1e47
+2025-03-19T13:31:18.434-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7bb0333e
+2025-03-19T13:31:18.434-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@7bb0333e
+2025-03-19T13:31:18.435-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@7bb0333e
+2025-03-19T13:31:18.435-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@3de47607
+2025-03-19T13:31:18.435-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@3de47607
+2025-03-19T13:31:18.435-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@3de47607
+2025-03-19T13:31:18.435-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@2b2d4e02
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@2b2d4e02
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@3567512e
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@63eefdd0
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@63eefdd0
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@47c257d3
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@6de4c77
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@93f93a3
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@93f93a3
+2025-03-19T13:31:18.436-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@93f93a3
+2025-03-19T13:31:18.437-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@1dabff29
+2025-03-19T13:31:18.437-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@1dabff29
+2025-03-19T13:31:18.437-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@1dabff29
+2025-03-19T13:31:18.437-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@48024f80
+2025-03-19T13:31:18.438-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@48024f80
+2025-03-19T13:31:18.439-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@48024f80
+2025-03-19T13:31:18.440-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@3ccb1f03
+2025-03-19T13:31:18.441-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@3ccb1f03
+2025-03-19T13:31:18.441-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@3ccb1f03
+2025-03-19T13:31:18.441-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@491c21b2
+2025-03-19T13:31:18.441-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@491c21b2
+2025-03-19T13:31:18.441-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@491c21b2
+2025-03-19T13:31:18.441-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@b0cdd0f
+2025-03-19T13:31:18.441-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@b0cdd0f
+2025-03-19T13:31:18.442-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@51a8fda1
+2025-03-19T13:31:18.442-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@51a8fda1
+2025-03-19T13:31:18.442-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@357fc390
+2025-03-19T13:31:18.442-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@357fc390
+2025-03-19T13:31:18.443-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@357fc390
+2025-03-19T13:31:18.444-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@1d46753c
+2025-03-19T13:31:18.444-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@704f273e
+2025-03-19T13:31:18.454-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@704f273e
+2025-03-19T13:31:18.455-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@661c9963
+2025-03-19T13:31:18.455-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@2d34b573
+2025-03-19T13:31:18.455-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@2d34b573
+2025-03-19T13:31:18.455-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@2d34b573
+2025-03-19T13:31:18.456-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@375ca7c
+2025-03-19T13:31:18.456-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@a0a7bfb
+2025-03-19T13:31:18.456-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@85f3c58
+2025-03-19T13:31:18.456-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@488f0d
+2025-03-19T13:31:18.456-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@488f0d
+2025-03-19T13:31:18.456-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@2d439352
+2025-03-19T13:31:18.457-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@2d439352
+2025-03-19T13:31:18.458-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@744ff0a2
+2025-03-19T13:31:18.458-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@503bf8f
+2025-03-19T13:31:18.458-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@41f778c5
+2025-03-19T13:31:18.458-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@709faaaa
+2025-03-19T13:31:18.458-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@7b5e9efb
+2025-03-19T13:31:18.458-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@6339b9d8
+2025-03-19T13:31:18.458-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@19f2d42a
+2025-03-19T13:31:18.458-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@19f2d42a
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@1435f744
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@1435f744
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@1b930a7f
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@1b930a7f
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@35ca97ac
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@35ca97ac
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@3a9646bb
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@3a9646bb
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@122197a
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@2e12bd3
+2025-03-19T13:31:18.459-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@63f7abd4
+2025-03-19T13:31:18.460-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@63f7abd4
+2025-03-19T13:31:18.460-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@6bdc9a8f
+2025-03-19T13:31:18.460-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7a24a747
+2025-03-19T13:31:18.460-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7190b463
+2025-03-19T13:31:18.460-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@2fe7088e
+2025-03-19T13:31:18.460-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@2fe7088e
+2025-03-19T13:31:18.460-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@20e0e71f
+2025-03-19T13:31:18.460-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@7f2162db
+2025-03-19T13:31:18.461-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@b66e2f0
+2025-03-19T13:31:18.461-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@b66e2f0
+2025-03-19T13:31:18.461-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@1cd2286a
+2025-03-19T13:31:18.462-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@1cd2286a
+2025-03-19T13:31:18.463-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@3b2dfcf0
+2025-03-19T13:31:18.463-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@3b2dfcf0
+2025-03-19T13:31:18.463-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@3b2dfcf0
+2025-03-19T13:31:18.463-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@4fee66f4
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@4fee66f4
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@4fee66f4
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@73237c9b
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@7ebf8bed
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@2aa122b6
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@2aa122b6
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@164438d0
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@164438d0
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@164438d0
+2025-03-19T13:31:18.464-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@7e6b5927
+2025-03-19T13:31:18.465-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@7c8945e4
+2025-03-19T13:31:18.465-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@5f1e7c51
+2025-03-19T13:31:18.465-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@5f1e7c51
+2025-03-19T13:31:18.465-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@68ab5dda
+2025-03-19T13:31:18.465-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@68ab5dda
+2025-03-19T13:31:18.465-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@68ab5dda
+2025-03-19T13:31:18.465-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@4cad8389
+2025-03-19T13:31:18.465-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@4cad8389
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@7abd499d
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@7abd499d
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@566d5e6f
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@566d5e6f
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@649a8cf5
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@649a8cf5
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@440bfa24
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@440bfa24
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@54eaa299
+2025-03-19T13:31:18.466-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@68c8104d
+2025-03-19T13:31:18.472-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@75e0f322
+2025-03-19T13:31:18.473-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@75e0f322
+2025-03-19T13:31:18.478-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@2767885c
+2025-03-19T13:31:18.479-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@cf7632
+2025-03-19T13:31:18.479-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@488f6dc
+2025-03-19T13:31:18.479-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@535fa3e4
+2025-03-19T13:31:18.479-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@4861f4bb
+2025-03-19T13:31:18.480-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@33e47563
+2025-03-19T13:31:18.480-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@70195bd5
+2025-03-19T13:31:18.480-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@5e7786b1
+2025-03-19T13:31:18.481-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@197475e8
+2025-03-19T13:31:18.945-03:00  INFO 6884 --- [petabyte] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-19T13:31:19.101-03:00 DEBUG 6884 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-03-19T13:31:19.101-03:00 DEBUG 6884 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-03-19T13:31:19.102-03:00 DEBUG 6884 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-03-19T13:31:19.106-03:00 DEBUG 6884 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-03-19T13:31:19.106-03:00 DEBUG 6884 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-03-19T13:31:19.109-03:00 DEBUG 6884 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2025-03-19T13:31:19.117-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:31:19.117-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:31:19.118-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:31:19.122-03:00 DEBUG 6884 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1be1f8a1] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@3116ac4a]
+2025-03-19T13:31:20.514-03:00  INFO 6884 --- [petabyte] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-19T13:31:20.515-03:00 DEBUG 6884 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@1be1f8a1] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@7e61d5de]
+2025-03-19T13:31:20.534-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     drop table if exists categoriacomponente cascade 
-2024-12-04T13:12:55.626-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.539-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     drop table if exists componente cascade 
-2024-12-04T13:12:55.635-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.539-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     drop table if exists fornecedor cascade 
-2024-12-04T13:12:55.635-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.539-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_categoriacomponente
-2024-12-04T13:12:55.635-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.540-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_componente
-2024-12-04T13:12:55.635-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.540-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     drop sequence if exists seq_fornecedor
-2024-12-04T13:12:55.651-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.545-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_categoriacomponente start with 1 increment by 50
-2024-12-04T13:12:55.660-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.548-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_componente start with 1 increment by 50
-2024-12-04T13:12:55.660-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.549-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     create sequence seq_fornecedor start with 1 increment by 50
-2024-12-04T13:12:55.669-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.553-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     create table categoriacomponente (
         id_categoria_componente integer not null,
         descricao varchar(255) not null unique,
         primary key (id_categoria_componente)
     )
-2024-12-04T13:12:55.694-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.560-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     create table componente (
         condicao tinyint check (condicao between 0 and 2),
         data_fabricacao date,
@@ -201,7 +201,7 @@
         modelo varchar(255) not null,
         primary key (id_componente)
     )
-2024-12-04T13:12:55.715-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.566-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     create table fornecedor (
         id_fornecedor integer not null,
         status tinyint check (status between 0 and 1),
@@ -213,118 +213,1422 @@
         razao_social varchar(255) not null,
         primary key (id_fornecedor)
     )
-2024-12-04T13:12:55.723-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.568-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     alter table if exists componente 
        add constraint FKj2g2w88nyunwbrvsx1gdb9ao2 
        foreign key (idcategoriacomponente) 
        references categoriacomponente
-2024-12-04T13:12:55.759-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.582-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     alter table if exists componente 
        add constraint FK7x9u3wobp08s4724rd1ji8tn9 
        foreign key (idfornecedor) 
        references fornecedor
-2024-12-04T13:12:55.903-03:00 TRACE 2640 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@4e85cdf2] for TypeConfiguration
-2024-12-04T13:12:55.911-03:00  INFO 2640 --- [petabyte] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
-2024-12-04T13:12:57.870-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:20.590-03:00 TRACE 6884 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@7e61d5de] for TypeConfiguration
+2025-03-19T13:31:20.591-03:00  INFO 6884 --- [petabyte] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-19T13:31:21.296-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     select
         next value for seq_categoriacomponente
-2024-12-04T13:12:58.255-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.404-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         categoriacomponente
         (descricao, id_categoria_componente) 
     values
         (?, ?)
-2024-12-04T13:12:58.302-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.417-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     select
         next value for seq_categoriacomponente
-2024-12-04T13:12:58.318-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.418-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         categoriacomponente
         (descricao, id_categoria_componente) 
     values
         (?, ?)
-2024-12-04T13:12:58.334-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.420-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         categoriacomponente
         (descricao, id_categoria_componente) 
     values
         (?, ?)
-2024-12-04T13:12:58.349-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.422-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     select
         next value for seq_fornecedor
-2024-12-04T13:12:58.354-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.424-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         fornecedor
         (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?)
-2024-12-04T13:12:58.354-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.426-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     select
         next value for seq_fornecedor
-2024-12-04T13:12:58.362-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.427-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         fornecedor
         (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?)
-2024-12-04T13:12:58.375-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.430-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         fornecedor
         (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?)
-2024-12-04T13:12:58.375-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.432-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     select
         next value for seq_componente
-2024-12-04T13:12:58.391-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.438-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         componente
         (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2024-12-04T13:12:58.404-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.444-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     select
         next value for seq_componente
-2024-12-04T13:12:58.412-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.446-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         componente
         (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2024-12-04T13:12:58.420-03:00 DEBUG 2640 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.448-03:00 DEBUG 6884 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
     insert 
     into
         componente
         (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
     values
         (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-2024-12-04T13:12:58.873-03:00  WARN 2640 --- [petabyte] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2024-12-04T13:13:00.512-03:00  INFO 2640 --- [petabyte] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
-2024-12-04T13:13:00.646-03:00  INFO 2640 --- [petabyte] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
-2024-12-04T13:13:00.679-03:00  INFO 2640 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : Started PetabyteApplication in 24.244 seconds (process running for 26.506)
-2024-12-04T13:13:18.819-03:00  INFO 2640 --- [petabyte] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
-2024-12-04T13:13:18.819-03:00 DEBUG 2640 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+2025-03-19T13:31:21.551-03:00  WARN 6884 --- [petabyte] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-19T13:31:22.165-03:00  INFO 6884 --- [petabyte] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-19T13:31:22.211-03:00  INFO 6884 --- [petabyte] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-19T13:31:22.225-03:00  INFO 6884 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : Started PetabyteApplication in 9.391 seconds (process running for 10.188)
+2025-03-19T13:32:00.326-03:00  INFO 6884 --- [petabyte] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-19T13:32:00.326-03:00  INFO 6884 --- [petabyte] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-19T13:32:00.327-03:00  INFO 6884 --- [petabyte] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-19T13:32:00.473-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    left join
+        categoriacomponente cc1_0 
+            on cc1_0.id_categoria_componente=c1_0.idcategoriacomponente 
+    left join
+        fornecedor f1_0 
+            on f1_0.id_fornecedor=c1_0.idfornecedor 
+    where
+        c1_0.id_componente=?
+2025-03-19T13:34:31.108-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:36:02.289-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:36:02.298-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.idcategoriacomponente,
+        c1_0.id_componente,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    left join
+        fornecedor f1_0 
+            on f1_0.id_fornecedor=c1_0.idfornecedor 
+    where
+        c1_0.idcategoriacomponente=?
+2025-03-19T13:36:02.310-03:00  WARN 6884 --- [petabyte] [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.curso.services.exceptions.DataIntegrityViolationException: Categoria de Componente não pode ser deletada pois possuí Componentes vinculádos]
+2025-03-19T13:40:26.417-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    left join
+        categoriacomponente cc1_0 
+            on cc1_0.id_categoria_componente=c1_0.idcategoriacomponente 
+    left join
+        fornecedor f1_0 
+            on f1_0.id_fornecedor=c1_0.idfornecedor 
+    where
+        c1_0.id_componente=?
+2025-03-19T13:40:33.255-03:00  WARN 6884 --- [petabyte] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.method.annotation.MethodArgumentTypeMismatchException: Method parameter 'id': Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; For input string: "GeForceRTX4080"]
+2025-03-19T13:40:56.019-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    left join
+        categoriacomponente cc1_0 
+            on cc1_0.id_categoria_componente=c1_0.idcategoriacomponente 
+    left join
+        fornecedor f1_0 
+            on f1_0.id_fornecedor=c1_0.idfornecedor 
+    where
+        c1_0.id_componente=?
+2025-03-19T13:41:11.607-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        c1_0.idcategoriacomponente,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        c1_0.idfornecedor,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    where
+        c1_0.descricao=?
+2025-03-19T13:41:11.610-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:41:11.613-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:42:03.824-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:42:12.859-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.descricao=?
+2025-03-19T13:42:57.860-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:43:20.293-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.razao_social=?
+2025-03-19T13:43:43.246-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        c1_0.idcategoriacomponente,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        c1_0.idfornecedor,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0
+2025-03-19T13:43:43.247-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:43:43.248-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:43:43.249-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:43:43.249-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:43:43.250-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:43:43.251-03:00 DEBUG 6884 --- [petabyte] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:44:56.903-03:00  WARN 6884 --- [petabyte] [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.curso.domains.dtos.ComponenteDTO> com.curso.resources.ComponenteResource.create(com.curso.domains.dtos.ComponenteDTO): [Field error in object 'componenteDTO' on field 'valorDesconto': rejected value [null]; codes [NotNull.componenteDTO.valorDesconto,NotNull.valorDesconto,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [componenteDTO.valorDesconto,valorDesconto]; arguments []; default message [valorDesconto]]; default message [O campo valor não pode ser nulo]] ]
+2025-03-19T13:45:13.574-03:00  INFO 6884 --- [petabyte] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-19T13:45:13.575-03:00 DEBUG 6884 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
     drop table if exists categoriacomponente cascade 
-2024-12-04T13:13:18.835-03:00 DEBUG 2640 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+2025-03-19T13:45:13.583-03:00 DEBUG 6884 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
     drop table if exists componente cascade 
-2024-12-04T13:13:18.835-03:00 DEBUG 2640 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+2025-03-19T13:45:13.585-03:00 DEBUG 6884 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
     drop table if exists fornecedor cascade 
-2024-12-04T13:13:18.843-03:00 DEBUG 2640 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+2025-03-19T13:45:13.588-03:00 DEBUG 6884 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
     drop sequence if exists seq_categoriacomponente
-2024-12-04T13:13:18.843-03:00 DEBUG 2640 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+2025-03-19T13:45:13.589-03:00 DEBUG 6884 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
     drop sequence if exists seq_componente
-2024-12-04T13:13:18.843-03:00 DEBUG 2640 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+2025-03-19T13:45:13.590-03:00 DEBUG 6884 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
     drop sequence if exists seq_fornecedor
-2024-12-04T13:13:18.855-03:00 TRACE 2640 --- [petabyte] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@4e85cdf2] for TypeConfiguration
-2024-12-04T13:13:18.855-03:00 DEBUG 2640 --- [petabyte] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@5252b3f9] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@4e85cdf2]
-2024-12-04T13:13:18.871-03:00  WARN 2640 --- [petabyte] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
-2024-12-04T13:13:18.871-03:00  INFO 2640 --- [petabyte] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
-2024-12-04T13:13:18.903-03:00  INFO 2640 --- [petabyte] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-19T13:45:13.594-03:00 TRACE 6884 --- [petabyte] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@7e61d5de] for TypeConfiguration
+2025-03-19T13:45:13.594-03:00 DEBUG 6884 --- [petabyte] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@7e6ae1c9] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@7e61d5de]
+2025-03-19T13:45:13.601-03:00  WARN 6884 --- [petabyte] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-03-19T13:45:13.602-03:00  INFO 6884 --- [petabyte] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-19T13:45:13.614-03:00  INFO 6884 --- [petabyte] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-19T13:45:50.293-03:00  INFO 13764 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : Starting PetabyteApplication using Java 17.0.13 with PID 13764 (C:\Users\josev\OneDrive\Documentos\Projects\Spring\petabyte\target\classes started by josev in C:\Users\josev\OneDrive\Documentos\Projects\Spring\petabyte)
+2025-03-19T13:45:50.301-03:00  INFO 13764 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : The following 1 profile is active: "test"
+2025-03-19T13:45:50.402-03:00  INFO 13764 --- [petabyte] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-19T13:45:50.403-03:00  INFO 13764 --- [petabyte] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-19T13:45:51.381-03:00  INFO 13764 --- [petabyte] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-19T13:45:51.459-03:00  INFO 13764 --- [petabyte] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 66 ms. Found 3 JPA repository interfaces.
+2025-03-19T13:45:52.760-03:00  INFO 13764 --- [petabyte] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-19T13:45:52.781-03:00  INFO 13764 --- [petabyte] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-19T13:45:52.781-03:00  INFO 13764 --- [petabyte] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-03-19T13:45:52.865-03:00  INFO 13764 --- [petabyte] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-19T13:45:52.866-03:00  INFO 13764 --- [petabyte] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2462 ms
+2025-03-19T13:45:52.916-03:00  INFO 13764 --- [petabyte] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-19T13:45:53.201-03:00  INFO 13764 --- [petabyte] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:petabytedb user=SA
+2025-03-19T13:45:53.203-03:00  INFO 13764 --- [petabyte] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-19T13:45:53.225-03:00  INFO 13764 --- [petabyte] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:petabytedb'
+2025-03-19T13:45:53.451-03:00  INFO 13764 --- [petabyte] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-19T13:45:53.535-03:00  INFO 13764 --- [petabyte] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-03-19T13:45:53.589-03:00  INFO 13764 --- [petabyte] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-19T13:45:53.707-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@1b4c2729
+2025-03-19T13:45:53.708-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@1b4c2729
+2025-03-19T13:45:53.711-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@1b4c2729
+2025-03-19T13:45:53.713-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@254f376b
+2025-03-19T13:45:53.714-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@254f376b
+2025-03-19T13:45:53.714-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@7378204c
+2025-03-19T13:45:53.714-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@7378204c
+2025-03-19T13:45:53.715-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@18b3f0c7
+2025-03-19T13:45:53.715-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@18b3f0c7
+2025-03-19T13:45:53.715-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@62bcf997
+2025-03-19T13:45:53.715-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@62bcf997
+2025-03-19T13:45:53.715-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@62bcf997
+2025-03-19T13:45:53.716-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@3e947ec4
+2025-03-19T13:45:53.716-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@3e947ec4
+2025-03-19T13:45:53.717-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@3e947ec4
+2025-03-19T13:45:53.717-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@e1b8f25
+2025-03-19T13:45:53.717-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@e1b8f25
+2025-03-19T13:45:53.717-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@13e4a27c
+2025-03-19T13:45:53.718-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@7dce7789
+2025-03-19T13:45:53.718-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@7dce7789
+2025-03-19T13:45:53.718-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@32235f1
+2025-03-19T13:45:53.718-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@5112e017
+2025-03-19T13:45:53.718-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@67d34f0b
+2025-03-19T13:45:53.718-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@67d34f0b
+2025-03-19T13:45:53.719-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@67d34f0b
+2025-03-19T13:45:53.719-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@69af1e47
+2025-03-19T13:45:53.719-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@69af1e47
+2025-03-19T13:45:53.719-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@69af1e47
+2025-03-19T13:45:53.719-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@7bb0333e
+2025-03-19T13:45:53.719-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@7bb0333e
+2025-03-19T13:45:53.719-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@7bb0333e
+2025-03-19T13:45:53.720-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@3de47607
+2025-03-19T13:45:53.720-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@3de47607
+2025-03-19T13:45:53.720-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@3de47607
+2025-03-19T13:45:53.720-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@4032cda7
+2025-03-19T13:45:53.720-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@4032cda7
+2025-03-19T13:45:53.720-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@4032cda7
+2025-03-19T13:45:53.721-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@51febec0
+2025-03-19T13:45:53.721-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@51febec0
+2025-03-19T13:45:53.721-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@2b2d4e02
+2025-03-19T13:45:53.721-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@2b2d4e02
+2025-03-19T13:45:53.722-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@3567512e
+2025-03-19T13:45:53.722-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@3567512e
+2025-03-19T13:45:53.722-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@3567512e
+2025-03-19T13:45:53.722-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@63eefdd0
+2025-03-19T13:45:53.723-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@47c257d3
+2025-03-19T13:45:53.726-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@47c257d3
+2025-03-19T13:45:53.727-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@6de4c77
+2025-03-19T13:45:53.727-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@93f93a3
+2025-03-19T13:45:53.727-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@93f93a3
+2025-03-19T13:45:53.727-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@93f93a3
+2025-03-19T13:45:53.727-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@1dabff29
+2025-03-19T13:45:53.727-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@48024f80
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@3ccb1f03
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@491c21b2
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@491c21b2
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@b0cdd0f
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@b0cdd0f
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@51a8fda1
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@357fc390
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@1d46753c
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@704f273e
+2025-03-19T13:45:53.728-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@661c9963
+2025-03-19T13:45:53.729-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@2d34b573
+2025-03-19T13:45:53.729-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@375ca7c
+2025-03-19T13:45:53.730-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@375ca7c
+2025-03-19T13:45:53.730-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@a0a7bfb
+2025-03-19T13:45:53.730-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@a0a7bfb
+2025-03-19T13:45:53.730-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@85f3c58
+2025-03-19T13:45:53.730-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@85f3c58
+2025-03-19T13:45:53.730-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@488f0d
+2025-03-19T13:45:53.731-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@488f0d
+2025-03-19T13:45:53.731-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@2d439352
+2025-03-19T13:45:53.731-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@2d439352
+2025-03-19T13:45:53.731-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@744ff0a2
+2025-03-19T13:45:53.731-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@503bf8f
+2025-03-19T13:45:53.731-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@41f778c5
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@41f778c5
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@709faaaa
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@7b5e9efb
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@6339b9d8
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@19f2d42a
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@19f2d42a
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@1435f744
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@1b930a7f
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@35ca97ac
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@35ca97ac
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@3a9646bb
+2025-03-19T13:45:53.732-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@3a9646bb
+2025-03-19T13:45:53.733-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@122197a
+2025-03-19T13:45:53.733-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@122197a
+2025-03-19T13:45:53.733-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@122197a
+2025-03-19T13:45:53.733-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@2e12bd3
+2025-03-19T13:45:53.733-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@2e12bd3
+2025-03-19T13:45:53.733-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@2e12bd3
+2025-03-19T13:45:53.733-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@63f7abd4
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@6bdc9a8f
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@7a24a747
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@7a24a747
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@7190b463
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@7190b463
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@7190b463
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@2fe7088e
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@20e0e71f
+2025-03-19T13:45:53.734-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@7f2162db
+2025-03-19T13:45:53.735-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@7f2162db
+2025-03-19T13:45:53.735-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@b66e2f0
+2025-03-19T13:45:53.735-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@b66e2f0
+2025-03-19T13:45:53.735-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@b66e2f0
+2025-03-19T13:45:53.735-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@1cd2286a
+2025-03-19T13:45:53.736-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@1cd2286a
+2025-03-19T13:45:53.736-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@3b2dfcf0
+2025-03-19T13:45:53.736-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@3b2dfcf0
+2025-03-19T13:45:53.736-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@4fee66f4
+2025-03-19T13:45:53.736-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@4fee66f4
+2025-03-19T13:45:53.736-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@73237c9b
+2025-03-19T13:45:53.736-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@73237c9b
+2025-03-19T13:45:53.736-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@7ebf8bed
+2025-03-19T13:45:53.737-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@7ebf8bed
+2025-03-19T13:45:53.737-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@2aa122b6
+2025-03-19T13:45:53.737-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@164438d0
+2025-03-19T13:45:53.745-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@e77a8a9
+2025-03-19T13:45:53.746-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@e77a8a9
+2025-03-19T13:45:53.747-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@75e0f322
+2025-03-19T13:45:53.748-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@3b3546a5
+2025-03-19T13:45:53.748-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@4f7bd73a
+2025-03-19T13:45:53.748-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@598774f2
+2025-03-19T13:45:53.748-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@2b8cf503
+2025-03-19T13:45:53.748-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@3a9d8eb9
+2025-03-19T13:45:53.748-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@2b4e5cd7
+2025-03-19T13:45:53.748-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@498c8da8
+2025-03-19T13:45:53.748-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@5644d77
+2025-03-19T13:45:54.107-03:00  INFO 13764 --- [petabyte] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-19T13:45:54.221-03:00 DEBUG 13764 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-03-19T13:45:54.221-03:00 DEBUG 13764 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-03-19T13:45:54.222-03:00 DEBUG 13764 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-03-19T13:45:54.224-03:00 DEBUG 13764 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-03-19T13:45:54.224-03:00 DEBUG 13764 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-03-19T13:45:54.226-03:00 DEBUG 13764 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2025-03-19T13:45:54.233-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:45:54.233-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:45:54.233-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:45:54.237-03:00 DEBUG 13764 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@23ec2117] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@11cc6479]
+2025-03-19T13:45:55.458-03:00  INFO 13764 --- [petabyte] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-19T13:45:55.459-03:00 DEBUG 13764 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@23ec2117] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@3d1f8f59]
+2025-03-19T13:45:55.477-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists categoriacomponente cascade 
+2025-03-19T13:45:55.484-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists componente cascade 
+2025-03-19T13:45:55.484-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists fornecedor cascade 
+2025-03-19T13:45:55.485-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_categoriacomponente
+2025-03-19T13:45:55.486-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_componente
+2025-03-19T13:45:55.486-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_fornecedor
+2025-03-19T13:45:55.492-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_categoriacomponente start with 1 increment by 50
+2025-03-19T13:45:55.495-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_componente start with 1 increment by 50
+2025-03-19T13:45:55.496-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_fornecedor start with 1 increment by 50
+2025-03-19T13:45:55.502-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create table categoriacomponente (
+        id_categoria_componente integer not null,
+        descricao varchar(255) not null unique,
+        primary key (id_categoria_componente)
+    )
+2025-03-19T13:45:55.511-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create table componente (
+        condicao tinyint check (condicao between 0 and 2),
+        data_fabricacao date,
+        desconto numeric(5,2),
+        estoque integer not null,
+        idcategoriacomponente integer,
+        idfornecedor integer,
+        status tinyint check (status between 0 and 1),
+        valor numeric(17,2),
+        valor_desconto numeric(17,2),
+        id_componente bigint not null,
+        descricao varchar(255) not null unique,
+        modelo varchar(255) not null,
+        primary key (id_componente)
+    )
+2025-03-19T13:45:55.518-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create table fornecedor (
+        id_fornecedor integer not null,
+        status tinyint check (status between 0 and 1),
+        cidade varchar(255) not null,
+        cnpj varchar(255) not null unique,
+        endereco varchar(255) not null,
+        estado varchar(255) not null,
+        pais varchar(255) not null,
+        razao_social varchar(255) not null,
+        primary key (id_fornecedor)
+    )
+2025-03-19T13:45:55.520-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists componente 
+       add constraint FKj2g2w88nyunwbrvsx1gdb9ao2 
+       foreign key (idcategoriacomponente) 
+       references categoriacomponente
+2025-03-19T13:45:55.539-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists componente 
+       add constraint FK7x9u3wobp08s4724rd1ji8tn9 
+       foreign key (idfornecedor) 
+       references fornecedor
+2025-03-19T13:45:55.547-03:00 TRACE 13764 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@3d1f8f59] for TypeConfiguration
+2025-03-19T13:45:55.547-03:00  INFO 13764 --- [petabyte] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-19T13:45:56.147-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_categoriacomponente
+2025-03-19T13:45:56.259-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoriacomponente
+        (descricao, id_categoria_componente) 
+    values
+        (?, ?)
+2025-03-19T13:45:56.275-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_categoriacomponente
+2025-03-19T13:45:56.276-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoriacomponente
+        (descricao, id_categoria_componente) 
+    values
+        (?, ?)
+2025-03-19T13:45:56.278-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoriacomponente
+        (descricao, id_categoria_componente) 
+    values
+        (?, ?)
+2025-03-19T13:45:56.280-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_fornecedor
+2025-03-19T13:45:56.282-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        fornecedor
+        (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:45:56.285-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_fornecedor
+2025-03-19T13:45:56.286-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        fornecedor
+        (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:45:56.290-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        fornecedor
+        (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:45:56.293-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_componente
+2025-03-19T13:45:56.299-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        componente
+        (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:45:56.302-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_componente
+2025-03-19T13:45:56.306-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        componente
+        (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:45:56.308-03:00 DEBUG 13764 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        componente
+        (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:45:56.423-03:00  WARN 13764 --- [petabyte] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-19T13:45:56.946-03:00  INFO 13764 --- [petabyte] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-19T13:45:56.993-03:00  INFO 13764 --- [petabyte] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-19T13:45:57.009-03:00  INFO 13764 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : Started PetabyteApplication in 7.493 seconds (process running for 8.223)
+2025-03-19T13:46:03.322-03:00  INFO 13764 --- [petabyte] [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-19T13:46:03.323-03:00  INFO 13764 --- [petabyte] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-19T13:46:03.324-03:00  INFO 13764 --- [petabyte] [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-19T13:46:03.647-03:00  WARN 13764 --- [petabyte] [http-nio-8080-exec-2] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public org.springframework.http.ResponseEntity<com.curso.domains.dtos.ComponenteDTO> com.curso.resources.ComponenteResource.create(com.curso.domains.dtos.ComponenteDTO): [Field error in object 'componenteDTO' on field 'valorDesconto': rejected value [null]; codes [NotNull.componenteDTO.valorDesconto,NotNull.valorDesconto,NotNull.java.math.BigDecimal,NotNull]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [componenteDTO.valorDesconto,valorDesconto]; arguments []; default message [valorDesconto]]; default message [O campo valor não pode ser nulo]] ]
+2025-03-19T13:46:42.433-03:00  INFO 13764 --- [petabyte] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-19T13:46:42.434-03:00 DEBUG 13764 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists categoriacomponente cascade 
+2025-03-19T13:46:42.436-03:00 DEBUG 13764 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists componente cascade 
+2025-03-19T13:46:42.437-03:00 DEBUG 13764 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists fornecedor cascade 
+2025-03-19T13:46:42.438-03:00 DEBUG 13764 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_categoriacomponente
+2025-03-19T13:46:42.439-03:00 DEBUG 13764 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_componente
+2025-03-19T13:46:42.439-03:00 DEBUG 13764 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_fornecedor
+2025-03-19T13:46:42.440-03:00 TRACE 13764 --- [petabyte] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@3d1f8f59] for TypeConfiguration
+2025-03-19T13:46:42.440-03:00 DEBUG 13764 --- [petabyte] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@635a816e] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@3d1f8f59]
+2025-03-19T13:46:42.446-03:00  WARN 13764 --- [petabyte] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-03-19T13:46:42.447-03:00  INFO 13764 --- [petabyte] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-19T13:46:42.449-03:00  INFO 13764 --- [petabyte] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-03-19T13:46:47.508-03:00  INFO 13440 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : Starting PetabyteApplication using Java 17.0.13 with PID 13440 (C:\Users\josev\OneDrive\Documentos\Projects\Spring\petabyte\target\classes started by josev in C:\Users\josev\OneDrive\Documentos\Projects\Spring\petabyte)
+2025-03-19T13:46:47.520-03:00  INFO 13440 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : The following 1 profile is active: "test"
+2025-03-19T13:46:47.627-03:00  INFO 13440 --- [petabyte] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-03-19T13:46:47.628-03:00  INFO 13440 --- [petabyte] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-03-19T13:46:48.595-03:00  INFO 13440 --- [petabyte] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-03-19T13:46:48.682-03:00  INFO 13440 --- [petabyte] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 73 ms. Found 3 JPA repository interfaces.
+2025-03-19T13:46:50.071-03:00  INFO 13440 --- [petabyte] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-03-19T13:46:50.093-03:00  INFO 13440 --- [petabyte] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-03-19T13:46:50.095-03:00  INFO 13440 --- [petabyte] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.31]
+2025-03-19T13:46:50.182-03:00  INFO 13440 --- [petabyte] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-03-19T13:46:50.182-03:00  INFO 13440 --- [petabyte] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2553 ms
+2025-03-19T13:46:50.233-03:00  INFO 13440 --- [petabyte] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-03-19T13:46:50.558-03:00  INFO 13440 --- [petabyte] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:petabytedb user=SA
+2025-03-19T13:46:50.560-03:00  INFO 13440 --- [petabyte] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-03-19T13:46:50.589-03:00  INFO 13440 --- [petabyte] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:petabytedb'
+2025-03-19T13:46:50.815-03:00  INFO 13440 --- [petabyte] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-03-19T13:46:50.900-03:00  INFO 13440 --- [petabyte] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2025-03-19T13:46:50.960-03:00  INFO 13440 --- [petabyte] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-03-19T13:46:51.093-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2b3589e8
+2025-03-19T13:46:51.094-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration boolean -> org.hibernate.type.BasicTypeReference@2b3589e8
+2025-03-19T13:46:51.094-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Boolean -> org.hibernate.type.BasicTypeReference@2b3589e8
+2025-03-19T13:46:51.095-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration numeric_boolean -> org.hibernate.type.BasicTypeReference@53ebaeb5
+2025-03-19T13:46:51.095-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.NumericBooleanConverter -> org.hibernate.type.BasicTypeReference@53ebaeb5
+2025-03-19T13:46:51.095-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration true_false -> org.hibernate.type.BasicTypeReference@26460626
+2025-03-19T13:46:51.095-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.TrueFalseConverter -> org.hibernate.type.BasicTypeReference@26460626
+2025-03-19T13:46:51.095-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration yes_no -> org.hibernate.type.BasicTypeReference@2b0ce748
+2025-03-19T13:46:51.095-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.YesNoConverter -> org.hibernate.type.BasicTypeReference@2b0ce748
+2025-03-19T13:46:51.096-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@2c715108
+2025-03-19T13:46:51.096-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte -> org.hibernate.type.BasicTypeReference@2c715108
+2025-03-19T13:46:51.096-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Byte -> org.hibernate.type.BasicTypeReference@2c715108
+2025-03-19T13:46:51.097-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary -> org.hibernate.type.BasicTypeReference@2261cc35
+2025-03-19T13:46:51.098-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration byte[] -> org.hibernate.type.BasicTypeReference@2261cc35
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [B -> org.hibernate.type.BasicTypeReference@2261cc35
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration binary_wrapper -> org.hibernate.type.BasicTypeReference@5e25e910
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-binary -> org.hibernate.type.BasicTypeReference@5e25e910
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration image -> org.hibernate.type.BasicTypeReference@72898685
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration blob -> org.hibernate.type.BasicTypeReference@42f2826c
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Blob -> org.hibernate.type.BasicTypeReference@42f2826c
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob -> org.hibernate.type.BasicTypeReference@6a502e1a
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_blob_wrapper -> org.hibernate.type.BasicTypeReference@1b4c2729
+2025-03-19T13:46:51.100-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@254f376b
+2025-03-19T13:46:51.101-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration short -> org.hibernate.type.BasicTypeReference@254f376b
+2025-03-19T13:46:51.101-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Short -> org.hibernate.type.BasicTypeReference@254f376b
+2025-03-19T13:46:51.101-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration integer -> org.hibernate.type.BasicTypeReference@7378204c
+2025-03-19T13:46:51.101-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration int -> org.hibernate.type.BasicTypeReference@7378204c
+2025-03-19T13:46:51.101-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Integer -> org.hibernate.type.BasicTypeReference@7378204c
+2025-03-19T13:46:51.101-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@18b3f0c7
+2025-03-19T13:46:51.102-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration long -> org.hibernate.type.BasicTypeReference@18b3f0c7
+2025-03-19T13:46:51.102-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Long -> org.hibernate.type.BasicTypeReference@18b3f0c7
+2025-03-19T13:46:51.102-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@62bcf997
+2025-03-19T13:46:51.103-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration float -> org.hibernate.type.BasicTypeReference@62bcf997
+2025-03-19T13:46:51.103-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Float -> org.hibernate.type.BasicTypeReference@62bcf997
+2025-03-19T13:46:51.103-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@3e947ec4
+2025-03-19T13:46:51.103-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration double -> org.hibernate.type.BasicTypeReference@3e947ec4
+2025-03-19T13:46:51.103-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Double -> org.hibernate.type.BasicTypeReference@3e947ec4
+2025-03-19T13:46:51.103-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_integer -> org.hibernate.type.BasicTypeReference@c5c431a
+2025-03-19T13:46:51.103-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigInteger -> org.hibernate.type.BasicTypeReference@c5c431a
+2025-03-19T13:46:51.104-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration big_decimal -> org.hibernate.type.BasicTypeReference@b6eaf9e
+2025-03-19T13:46:51.104-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.math.BigDecimal -> org.hibernate.type.BasicTypeReference@b6eaf9e
+2025-03-19T13:46:51.104-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character -> org.hibernate.type.BasicTypeReference@e1b8f25
+2025-03-19T13:46:51.104-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char -> org.hibernate.type.BasicTypeReference@e1b8f25
+2025-03-19T13:46:51.104-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Character -> org.hibernate.type.BasicTypeReference@e1b8f25
+2025-03-19T13:46:51.104-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration character_nchar -> org.hibernate.type.BasicTypeReference@13e4a27c
+2025-03-19T13:46:51.104-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration string -> org.hibernate.type.BasicTypeReference@7dce7789
+2025-03-19T13:46:51.105-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.String -> org.hibernate.type.BasicTypeReference@7dce7789
+2025-03-19T13:46:51.105-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nstring -> org.hibernate.type.BasicTypeReference@32235f1
+2025-03-19T13:46:51.105-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration characters -> org.hibernate.type.BasicTypeReference@5112e017
+2025-03-19T13:46:51.105-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration char[] -> org.hibernate.type.BasicTypeReference@5112e017
+2025-03-19T13:46:51.106-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration [C -> org.hibernate.type.BasicTypeReference@5112e017
+2025-03-19T13:46:51.106-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration wrapper-characters -> org.hibernate.type.BasicTypeReference@67d34f0b
+2025-03-19T13:46:51.106-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration text -> org.hibernate.type.BasicTypeReference@69af1e47
+2025-03-19T13:46:51.106-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ntext -> org.hibernate.type.BasicTypeReference@7bb0333e
+2025-03-19T13:46:51.106-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration clob -> org.hibernate.type.BasicTypeReference@3de47607
+2025-03-19T13:46:51.106-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Clob -> org.hibernate.type.BasicTypeReference@3de47607
+2025-03-19T13:46:51.106-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration nclob -> org.hibernate.type.BasicTypeReference@4032cda7
+2025-03-19T13:46:51.106-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.NClob -> org.hibernate.type.BasicTypeReference@4032cda7
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob -> org.hibernate.type.BasicTypeReference@51febec0
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_char_array -> org.hibernate.type.BasicTypeReference@2b2d4e02
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_clob_character_array -> org.hibernate.type.BasicTypeReference@3567512e
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob -> org.hibernate.type.BasicTypeReference@63eefdd0
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_character_array -> org.hibernate.type.BasicTypeReference@47c257d3
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration materialized_nclob_char_array -> org.hibernate.type.BasicTypeReference@6de4c77
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> org.hibernate.type.BasicTypeReference@93f93a3
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> org.hibernate.type.BasicTypeReference@93f93a3
+2025-03-19T13:46:51.107-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDateTime -> org.hibernate.type.BasicTypeReference@1dabff29
+2025-03-19T13:46:51.108-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDateTime -> org.hibernate.type.BasicTypeReference@1dabff29
+2025-03-19T13:46:51.108-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalDate -> org.hibernate.type.BasicTypeReference@48024f80
+2025-03-19T13:46:51.108-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalDate -> org.hibernate.type.BasicTypeReference@48024f80
+2025-03-19T13:46:51.108-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration LocalTime -> org.hibernate.type.BasicTypeReference@3ccb1f03
+2025-03-19T13:46:51.108-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.LocalTime -> org.hibernate.type.BasicTypeReference@3ccb1f03
+2025-03-19T13:46:51.109-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTime -> org.hibernate.type.BasicTypeReference@491c21b2
+2025-03-19T13:46:51.109-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetDateTime -> org.hibernate.type.BasicTypeReference@491c21b2
+2025-03-19T13:46:51.109-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@b0cdd0f
+2025-03-19T13:46:51.109-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@51a8fda1
+2025-03-19T13:46:51.109-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTime -> org.hibernate.type.BasicTypeReference@357fc390
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.OffsetTime -> org.hibernate.type.BasicTypeReference@357fc390
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeUtc -> org.hibernate.type.BasicTypeReference@1d46753c
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithTimezone -> org.hibernate.type.BasicTypeReference@704f273e
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration OffsetTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@661c9963
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTime -> org.hibernate.type.BasicTypeReference@2d34b573
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZonedDateTime -> org.hibernate.type.BasicTypeReference@2d34b573
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithTimezone -> org.hibernate.type.BasicTypeReference@375ca7c
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZonedDateTimeWithoutTimezone -> org.hibernate.type.BasicTypeReference@a0a7bfb
+2025-03-19T13:46:51.110-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration date -> org.hibernate.type.BasicTypeReference@85f3c58
+2025-03-19T13:46:51.111-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Date -> org.hibernate.type.BasicTypeReference@85f3c58
+2025-03-19T13:46:51.111-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration time -> org.hibernate.type.BasicTypeReference@488f0d
+2025-03-19T13:46:51.111-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Time -> org.hibernate.type.BasicTypeReference@488f0d
+2025-03-19T13:46:51.111-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timestamp -> org.hibernate.type.BasicTypeReference@2d439352
+2025-03-19T13:46:51.111-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.sql.Timestamp -> org.hibernate.type.BasicTypeReference@2d439352
+2025-03-19T13:46:51.111-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Date -> org.hibernate.type.BasicTypeReference@2d439352
+2025-03-19T13:46:51.111-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar -> org.hibernate.type.BasicTypeReference@744ff0a2
+2025-03-19T13:46:51.111-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Calendar -> org.hibernate.type.BasicTypeReference@744ff0a2
+2025-03-19T13:46:51.112-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.GregorianCalendar -> org.hibernate.type.BasicTypeReference@744ff0a2
+2025-03-19T13:46:51.113-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_date -> org.hibernate.type.BasicTypeReference@503bf8f
+2025-03-19T13:46:51.113-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration calendar_time -> org.hibernate.type.BasicTypeReference@41f778c5
+2025-03-19T13:46:51.113-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration instant -> org.hibernate.type.BasicTypeReference@709faaaa
+2025-03-19T13:46:51.113-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Instant -> org.hibernate.type.BasicTypeReference@709faaaa
+2025-03-19T13:46:51.114-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid -> org.hibernate.type.BasicTypeReference@7b5e9efb
+2025-03-19T13:46:51.114-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.UUID -> org.hibernate.type.BasicTypeReference@7b5e9efb
+2025-03-19T13:46:51.115-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration pg-uuid -> org.hibernate.type.BasicTypeReference@7b5e9efb
+2025-03-19T13:46:51.117-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-binary -> org.hibernate.type.BasicTypeReference@6339b9d8
+2025-03-19T13:46:51.118-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration uuid-char -> org.hibernate.type.BasicTypeReference@19f2d42a
+2025-03-19T13:46:51.119-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration class -> org.hibernate.type.BasicTypeReference@1435f744
+2025-03-19T13:46:51.119-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Class -> org.hibernate.type.BasicTypeReference@1435f744
+2025-03-19T13:46:51.120-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration currency -> org.hibernate.type.BasicTypeReference@1b930a7f
+2025-03-19T13:46:51.120-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Currency -> org.hibernate.type.BasicTypeReference@1b930a7f
+2025-03-19T13:46:51.121-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Currency -> org.hibernate.type.BasicTypeReference@1b930a7f
+2025-03-19T13:46:51.121-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration locale -> org.hibernate.type.BasicTypeReference@35ca97ac
+2025-03-19T13:46:51.121-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.Locale -> org.hibernate.type.BasicTypeReference@35ca97ac
+2025-03-19T13:46:51.121-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration serializable -> org.hibernate.type.BasicTypeReference@3a9646bb
+2025-03-19T13:46:51.122-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.io.Serializable -> org.hibernate.type.BasicTypeReference@3a9646bb
+2025-03-19T13:46:51.122-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration timezone -> org.hibernate.type.BasicTypeReference@122197a
+2025-03-19T13:46:51.122-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.util.TimeZone -> org.hibernate.type.BasicTypeReference@122197a
+2025-03-19T13:46:51.122-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration ZoneOffset -> org.hibernate.type.BasicTypeReference@2e12bd3
+2025-03-19T13:46:51.122-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.ZoneOffset -> org.hibernate.type.BasicTypeReference@2e12bd3
+2025-03-19T13:46:51.122-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration url -> org.hibernate.type.BasicTypeReference@63f7abd4
+2025-03-19T13:46:51.122-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.net.URL -> org.hibernate.type.BasicTypeReference@63f7abd4
+2025-03-19T13:46:51.123-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration vector -> org.hibernate.type.BasicTypeReference@6bdc9a8f
+2025-03-19T13:46:51.123-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration row_version -> org.hibernate.type.BasicTypeReference@7a24a747
+2025-03-19T13:46:51.129-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration object -> org.hibernate.type.JavaObjectType@5e9183c8
+2025-03-19T13:46:51.129-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.lang.Object -> org.hibernate.type.JavaObjectType@5e9183c8
+2025-03-19T13:46:51.131-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration null -> org.hibernate.type.NullType@7dba2f7b
+2025-03-19T13:46:51.132-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_date -> org.hibernate.type.BasicTypeReference@e77a8a9
+2025-03-19T13:46:51.132-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_time -> org.hibernate.type.BasicTypeReference@79561f19
+2025-03-19T13:46:51.132-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_timestamp -> org.hibernate.type.BasicTypeReference@514bc11f
+2025-03-19T13:46:51.132-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar -> org.hibernate.type.BasicTypeReference@7d26fdba
+2025-03-19T13:46:51.132-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_date -> org.hibernate.type.BasicTypeReference@4ea73057
+2025-03-19T13:46:51.132-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_calendar_time -> org.hibernate.type.BasicTypeReference@7c0404d
+2025-03-19T13:46:51.133-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_binary -> org.hibernate.type.BasicTypeReference@88c2a93
+2025-03-19T13:46:51.133-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration imm_serializable -> org.hibernate.type.BasicTypeReference@428ddd15
+2025-03-19T13:46:51.521-03:00  INFO 13440 --- [petabyte] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-03-19T13:46:51.645-03:00 DEBUG 13440 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NCharTypeDescriptor) replaced previous registration(CharTypeDescriptor)
+2025-03-19T13:46:51.645-03:00 DEBUG 13440 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NVarcharTypeDescriptor) replaced previous registration(VarcharTypeDescriptor)
+2025-03-19T13:46:51.646-03:00 DEBUG 13440 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(LongNVarcharTypeDescriptor) replaced previous registration(LongVarcharTypeDescriptor)
+2025-03-19T13:46:51.649-03:00 DEBUG 13440 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(NClobTypeDescriptor(DEFAULT)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-03-19T13:46:51.649-03:00 DEBUG 13440 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(2005, ClobTypeDescriptor(STREAM_BINDING)) replaced previous registration(ClobTypeDescriptor(DEFAULT))
+2025-03-19T13:46:51.651-03:00 DEBUG 13440 --- [petabyte] [restartedMain] o.h.t.d.jdbc.spi.JdbcTypeRegistry        : addDescriptor(TimestampUtcDescriptor) replaced previous registration(TimestampUtcDescriptor)
+2025-03-19T13:46:51.658-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration org.hibernate.type.DurationType -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:46:51.659-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration Duration -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:46:51.659-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.type.BasicTypeRegistry     : Adding type registration java.time.Duration -> basicType@1(java.time.Duration,3015)
+2025-03-19T13:46:51.669-03:00 DEBUG 13440 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@ff696e] to MetadataBuildingContext [org.hibernate.boot.internal.MetadataBuildingContextRootImpl@7f5e3fe3]
+2025-03-19T13:46:52.948-03:00  INFO 13440 --- [petabyte] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-03-19T13:46:52.949-03:00 DEBUG 13440 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration@ff696e] to SessionFactoryImplementor [org.hibernate.internal.SessionFactoryImpl@7275a0be]
+2025-03-19T13:46:52.966-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists categoriacomponente cascade 
+2025-03-19T13:46:52.970-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists componente cascade 
+2025-03-19T13:46:52.970-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop table if exists fornecedor cascade 
+2025-03-19T13:46:52.971-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_categoriacomponente
+2025-03-19T13:46:52.972-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_componente
+2025-03-19T13:46:52.972-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    drop sequence if exists seq_fornecedor
+2025-03-19T13:46:52.979-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_categoriacomponente start with 1 increment by 50
+2025-03-19T13:46:52.982-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_componente start with 1 increment by 50
+2025-03-19T13:46:52.983-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create sequence seq_fornecedor start with 1 increment by 50
+2025-03-19T13:46:52.987-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create table categoriacomponente (
+        id_categoria_componente integer not null,
+        descricao varchar(255) not null unique,
+        primary key (id_categoria_componente)
+    )
+2025-03-19T13:46:52.994-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create table componente (
+        condicao tinyint check (condicao between 0 and 2),
+        data_fabricacao date,
+        desconto numeric(5,2),
+        estoque integer not null,
+        idcategoriacomponente integer,
+        idfornecedor integer,
+        status tinyint check (status between 0 and 1),
+        valor numeric(17,2),
+        valor_desconto numeric(17,2),
+        id_componente bigint not null,
+        descricao varchar(255) not null unique,
+        modelo varchar(255) not null,
+        primary key (id_componente)
+    )
+2025-03-19T13:46:53.000-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    create table fornecedor (
+        id_fornecedor integer not null,
+        status tinyint check (status between 0 and 1),
+        cidade varchar(255) not null,
+        cnpj varchar(255) not null unique,
+        endereco varchar(255) not null,
+        estado varchar(255) not null,
+        pais varchar(255) not null,
+        razao_social varchar(255) not null,
+        primary key (id_fornecedor)
+    )
+2025-03-19T13:46:53.004-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists componente 
+       add constraint FKj2g2w88nyunwbrvsx1gdb9ao2 
+       foreign key (idcategoriacomponente) 
+       references categoriacomponente
+2025-03-19T13:46:53.024-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    alter table if exists componente 
+       add constraint FK7x9u3wobp08s4724rd1ji8tn9 
+       foreign key (idfornecedor) 
+       references fornecedor
+2025-03-19T13:46:53.029-03:00 TRACE 13440 --- [petabyte] [restartedMain] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryCreated from [org.hibernate.internal.SessionFactoryImpl@7275a0be] for TypeConfiguration
+2025-03-19T13:46:53.030-03:00  INFO 13440 --- [petabyte] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-03-19T13:46:53.703-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_categoriacomponente
+2025-03-19T13:46:53.808-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoriacomponente
+        (descricao, id_categoria_componente) 
+    values
+        (?, ?)
+2025-03-19T13:46:53.825-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_categoriacomponente
+2025-03-19T13:46:53.826-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoriacomponente
+        (descricao, id_categoria_componente) 
+    values
+        (?, ?)
+2025-03-19T13:46:53.830-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        categoriacomponente
+        (descricao, id_categoria_componente) 
+    values
+        (?, ?)
+2025-03-19T13:46:53.832-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_fornecedor
+2025-03-19T13:46:53.834-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        fornecedor
+        (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:46:53.836-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_fornecedor
+2025-03-19T13:46:53.837-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        fornecedor
+        (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:46:53.840-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        fornecedor
+        (cidade, cnpj, endereco, estado, pais, razao_social, status, id_fornecedor) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:46:53.842-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_componente
+2025-03-19T13:46:53.845-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        componente
+        (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:46:53.848-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    select
+        next value for seq_componente
+2025-03-19T13:46:53.851-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        componente
+        (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:46:53.856-03:00 DEBUG 13440 --- [petabyte] [restartedMain] org.hibernate.SQL                        : 
+    insert 
+    into
+        componente
+        (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:46:53.973-03:00  WARN 13440 --- [petabyte] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-03-19T13:46:54.495-03:00  INFO 13440 --- [petabyte] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-03-19T13:46:54.543-03:00  INFO 13440 --- [petabyte] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2025-03-19T13:46:54.554-03:00  INFO 13440 --- [petabyte] [restartedMain] com.curso.petabyte.PetabyteApplication   : Started PetabyteApplication in 7.757 seconds (process running for 8.601)
+2025-03-19T13:47:00.502-03:00  INFO 13440 --- [petabyte] [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-03-19T13:47:00.502-03:00  INFO 13440 --- [petabyte] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-03-19T13:47:00.503-03:00  INFO 13440 --- [petabyte] [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-03-19T13:47:00.909-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        c1_0.idcategoriacomponente,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        c1_0.idfornecedor,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    where
+        c1_0.descricao=?
+2025-03-19T13:47:00.927-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:47:00.935-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:47:00.973-03:00  WARN 13440 --- [petabyte] [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [com.curso.services.exceptions.DataIntegrityViolationException: Fornecedor - 0 não está cadastrado.]
+2025-03-19T13:47:35.197-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        c1_0.idcategoriacomponente,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        c1_0.idfornecedor,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    where
+        c1_0.descricao=?
+2025-03-19T13:47:35.200-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:47:35.201-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:47:35.204-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    insert 
+    into
+        componente
+        (idcategoriacomponente, condicao, data_fabricacao, desconto, descricao, estoque, idfornecedor, modelo, status, valor, valor_desconto, id_componente) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+2025-03-19T13:47:39.144-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        c1_0.idcategoriacomponente,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        c1_0.idfornecedor,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0
+2025-03-19T13:47:39.150-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:47:39.152-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:47:39.154-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:47:39.156-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:47:39.157-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:47:39.158-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:48:12.924-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    left join
+        categoriacomponente cc1_0 
+            on cc1_0.id_categoria_componente=c1_0.idcategoriacomponente 
+    left join
+        fornecedor f1_0 
+            on f1_0.id_fornecedor=c1_0.idfornecedor 
+    where
+        c1_0.id_componente=?
+2025-03-19T13:48:12.931-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        c1_0.idcategoriacomponente,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        c1_0.idfornecedor,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0 
+    where
+        c1_0.descricao=?
+2025-03-19T13:48:12.945-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    update
+        componente 
+    set
+        idcategoriacomponente=?,
+        condicao=?,
+        data_fabricacao=?,
+        desconto=?,
+        descricao=?,
+        estoque=?,
+        idfornecedor=?,
+        modelo=?,
+        status=?,
+        valor=?,
+        valor_desconto=? 
+    where
+        id_componente=?
+2025-03-19T13:48:22.155-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id_componente,
+        c1_0.idcategoriacomponente,
+        c1_0.condicao,
+        c1_0.data_fabricacao,
+        c1_0.desconto,
+        c1_0.descricao,
+        c1_0.estoque,
+        c1_0.idfornecedor,
+        c1_0.modelo,
+        c1_0.status,
+        c1_0.valor,
+        c1_0.valor_desconto 
+    from
+        componente c1_0
+2025-03-19T13:48:22.156-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:48:22.156-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:48:22.158-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:48:22.158-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:48:22.160-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        cc1_0.id_categoria_componente,
+        cc1_0.descricao 
+    from
+        categoriacomponente cc1_0 
+    where
+        cc1_0.id_categoria_componente=?
+2025-03-19T13:48:22.163-03:00 DEBUG 13440 --- [petabyte] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        f1_0.id_fornecedor,
+        f1_0.cidade,
+        f1_0.cnpj,
+        f1_0.endereco,
+        f1_0.estado,
+        f1_0.pais,
+        f1_0.razao_social,
+        f1_0.status 
+    from
+        fornecedor f1_0 
+    where
+        f1_0.id_fornecedor=?
+2025-03-19T13:49:42.809-03:00  INFO 13440 --- [petabyte] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-03-19T13:49:42.810-03:00 DEBUG 13440 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists categoriacomponente cascade 
+2025-03-19T13:49:42.813-03:00 DEBUG 13440 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists componente cascade 
+2025-03-19T13:49:42.815-03:00 DEBUG 13440 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop table if exists fornecedor cascade 
+2025-03-19T13:49:42.817-03:00 DEBUG 13440 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_categoriacomponente
+2025-03-19T13:49:42.818-03:00 DEBUG 13440 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_componente
+2025-03-19T13:49:42.819-03:00 DEBUG 13440 --- [petabyte] [SpringApplicationShutdownHook] org.hibernate.SQL                        : 
+    drop sequence if exists seq_fornecedor
+2025-03-19T13:49:42.822-03:00 TRACE 13440 --- [petabyte] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Handling #sessionFactoryClosed from [org.hibernate.internal.SessionFactoryImpl@7275a0be] for TypeConfiguration
+2025-03-19T13:49:42.824-03:00 DEBUG 13440 --- [petabyte] [SpringApplicationShutdownHook] o.h.type.spi.TypeConfiguration$Scope     : Un-scoping TypeConfiguration [org.hibernate.type.spi.TypeConfiguration$Scope@49f302de] from SessionFactory [org.hibernate.internal.SessionFactoryImpl@7275a0be]
+2025-03-19T13:49:42.833-03:00  WARN 13440 --- [petabyte] [SpringApplicationShutdownHook] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLNonTransientConnectionException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-224]
+2025-03-19T13:49:42.834-03:00  INFO 13440 --- [petabyte] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-03-19T13:49:42.838-03:00  INFO 13440 --- [petabyte] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
