@@ -16,22 +16,18 @@ public class PedidoDTO {
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataInicio;
-
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataEntrega;
-
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate prazoMaximo;
 
     @NotNull(message = "O campo tipoEntrega é requerido")
     private Integer tipoEntrega;
-
     @NotNull(message = "O campo statusPedido requerido")
     private Integer statusPedido;
 
     @NotNull(message = "O campo funcionario é requerido")
     private Long funcionario;
-
     @NotNull(message = "O campo usuario é requerido")
     private Long usuario;
     private String nomeFuncionario;

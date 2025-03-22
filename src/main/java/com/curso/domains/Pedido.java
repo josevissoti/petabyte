@@ -19,7 +19,7 @@ public class Pedido {
     private String descricao;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    private LocalDate dataInicio;
+    private LocalDate dataInicio = LocalDate.now();
 
     @JsonFormat(pattern = "dd/MM/yyyy")
     private LocalDate dataEntrega;
@@ -40,9 +40,10 @@ public class Pedido {
     public Pedido() {
     }
 
-    public Pedido(UUID idPedido, String descricao, TipoEntrega tipoEntrega, StatusPedido statusPedido, Usuario usuario, Funcionario funcionario) {
+    public Pedido(UUID idPedido, String descricao, LocalDate prazoMaximo, TipoEntrega tipoEntrega, StatusPedido statusPedido, Usuario usuario, Funcionario funcionario) {
         this.idPedido = idPedido;
         this.descricao = descricao;
+        this.prazoMaximo = prazoMaximo;
         this.tipoEntrega = tipoEntrega;
         this.statusPedido = statusPedido;
         this.usuario = usuario;

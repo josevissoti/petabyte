@@ -30,7 +30,7 @@ public abstract class Pessoa {
     protected String senha;
 
     @JsonFormat(pattern = "dd/MM/yyyy")
-    protected LocalDate dataCriacao;
+    protected LocalDate dataCriacao = LocalDate.now();
 
     @ElementCollection(fetch = FetchType.EAGER)
     @CollectionTable(name = "perfis")

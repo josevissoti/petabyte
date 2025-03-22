@@ -67,8 +67,8 @@ public class UsuarioService {
             throw new DataIntegrityViolationException("CPF já cadastrado no sistema");
         }
 
-        Optional<Usuario> obj2 = usuarioRepository.findByEmail(objDto.getEmail());
-        if (obj2.isPresent() && obj2.get().getIdPessoa() != objDto.getIdPessoa()) {
+        obj = usuarioRepository.findByEmail(objDto.getEmail());
+        if (obj.isPresent() && obj.get().getIdPessoa() != objDto.getIdPessoa()) {
             throw new DataIntegrityViolationException("Email já cadastrado no sistmea");
         }
     }

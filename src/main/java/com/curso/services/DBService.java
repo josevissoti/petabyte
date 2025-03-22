@@ -54,8 +54,8 @@ public class DBService {
         Funcionario funcionario01 = new Funcionario(null, "Leandro", "84517624814", LocalDate.of(1974, Month.OCTOBER, 18), "Leando@gmail.com", "Leando123");
         Funcionario funcionario02 = new Funcionario(null, "Claudia", "48215741394", LocalDate.of(1985, Month.JULY, 13), "Claudia@gmail.com", "Claudia123");
 
-        Pedido pedido01 = new Pedido(null, "PedidoGrande", TipoEntrega.NORMAL, StatusPedido.CAMINHO, usuario01, funcionario01);
-        Pedido pedido02 = new Pedido(null, "PedidoPequeno", TipoEntrega.EXPRESSO, StatusPedido.ENTREGUE, usuario02, funcionario02);
+        Pedido pedido01 = new Pedido(null, "PedidoGrande", LocalDate.of(2025, Month.APRIL, 1), TipoEntrega.NORMAL, StatusPedido.CAMINHO, usuario01, funcionario01);
+        Pedido pedido02 = new Pedido(null, "PedidoPequeno", LocalDate.of(2025, Month.MARCH, 21), TipoEntrega.EXPRESSO, StatusPedido.ENTREGUE, usuario02, funcionario02);
 
         categoriaComponenteRepo.save(categoriaComponente01);
         categoriaComponenteRepo.save(categoriaComponente02);

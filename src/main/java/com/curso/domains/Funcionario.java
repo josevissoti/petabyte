@@ -16,7 +16,7 @@ public class Funcionario extends Pessoa {
     @OneToMany(mappedBy = "funcionario")
     private List<Pedido> pedidos = new ArrayList<>();
 
-    public Funcionario(List<Pedido> pedidos) {
+    public Funcionario() {
         super();
         addTipoPessoa(TipoPessoa.FUNCIONARIO);
     }
