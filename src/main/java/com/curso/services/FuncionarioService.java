@@ -18,7 +18,7 @@ public class FuncionarioService {
     @Autowired
     private FuncionarioRepository funcionarioRepo;
 
-    public List<FuncionarioDTO> fundAll() {
+    public List<FuncionarioDTO> findAll() {
         return funcionarioRepo.findAll().stream()
                 .map(obj -> new FuncionarioDTO(obj)).collect(Collectors.toList());
     }

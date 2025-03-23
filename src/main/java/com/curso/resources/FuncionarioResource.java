@@ -19,9 +19,15 @@ public class FuncionarioResource {
     @Autowired
     private FuncionarioService funcionarioService;
 
-    @GetMapping(value = "/{id}")
+    @GetMapping
     public ResponseEntity<List<FuncionarioDTO>> findAll() {
-        return ResponseEntity.ok().body(funcionarioService.fundAll());
+        return ResponseEntity.ok().body(funcionarioService.findAll());
+    }
+
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<FuncionarioDTO> findById(@PathVariable Long id) {
+        Funcionario obj = this.funcionarioService.findById(id);
+        return ResponseEntity.ok().body(new FuncionarioDTO(obj));
     }
 
     @GetMapping(value = "/cpf/{cpf}")
