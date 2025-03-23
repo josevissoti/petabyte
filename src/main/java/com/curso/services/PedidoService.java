@@ -54,7 +54,7 @@ public class PedidoService {
         pedido.setUsuario(usuario);
         pedido.setTipoEntrega(TipoEntrega.toEnum(obj.getTipoEntrega()));
         pedido.setStatusPedido(StatusPedido.toEnum(obj.getStatusPedido()));
-        pedido.setDescricao(pedido.getDescricao());
+        pedido.setDescricao(obj.getDescricao());
         pedido.setPrazoMaximo(obj.getPrazoMaximo());
         return pedido;
     }

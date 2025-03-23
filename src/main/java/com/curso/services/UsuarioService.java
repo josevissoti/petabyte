@@ -18,7 +18,7 @@ public class UsuarioService {
     @Autowired
     private UsuarioRepository usuarioRepository;
 
-    public List<UsuarioDTO> fundAll() {
+    public List<UsuarioDTO> findAll() {
         return usuarioRepository.findAll().stream()
                 .map(obj -> new UsuarioDTO(obj)).collect(Collectors.toList());
     }
