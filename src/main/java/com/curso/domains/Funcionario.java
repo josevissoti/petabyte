@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @Entity
+@Table(name = "funcionario")
 public class Funcionario extends Pessoa {
 
     @Id
