@@ -34,6 +34,9 @@ public class DBService {
     @Autowired
     private PedidoRepository pedidoRepo;
 
+    @Autowired
+    private VeiculoRepository veiculoRepo;
+
     public void initDB() {
 
         CategoriaComponente categoriaComponente01 = new CategoriaComponente(null, "SSD");
@@ -57,6 +60,9 @@ public class DBService {
         Pedido pedido01 = new Pedido(null, "PedidoGrande", LocalDate.of(2025, Month.APRIL, 1), TipoEntrega.NORMAL, StatusPedido.CAMINHO, usuario01, funcionario01);
         Pedido pedido02 = new Pedido(null, "PedidoPequeno", LocalDate.of(2025, Month.MARCH, 21), TipoEntrega.EXPRESSO, StatusPedido.ENTREGUE, usuario02, funcionario02);
 
+        Veiculo veiculo01 = new Veiculo(null, "Corsa", LocalDate.of(2020, Month.OCTOBER, 14), new BigDecimal("50000.00"), "Fernando", "84521647519");
+        Veiculo veiculo02 = new Veiculo(null, "Duster", LocalDate.of(2024, Month.JANUARY, 23), new BigDecimal("80000.00"), "Jorge", "87521684581");
+
         categoriaComponenteRepo.save(categoriaComponente01);
         categoriaComponenteRepo.save(categoriaComponente02);
         categoriaComponenteRepo.save(categoriaComponente03);
@@ -77,6 +83,9 @@ public class DBService {
 
         pedidoRepo.save(pedido01);
         pedidoRepo.save(pedido02);
+
+        veiculoRepo.save(veiculo01);
+        veiculoRepo.save(veiculo02);
 
     }
 
