@@ -19,11 +19,13 @@ public class Funcionario extends Pessoa {
 
     public Funcionario() {
         super();
+        addTipoPessoa(TipoPessoa.USUARIO);
         addTipoPessoa(TipoPessoa.FUNCIONARIO);
     }
 
     public Funcionario(Long idPessoa, String nome, String cpf, LocalDate dataNascimento, String email, String senha) {
         super(idPessoa, nome, cpf, dataNascimento, email, senha);
+        addTipoPessoa(TipoPessoa.USUARIO);
         addTipoPessoa(TipoPessoa.FUNCIONARIO);
     }
 
@@ -48,4 +50,5 @@ public class Funcionario extends Pessoa {
     public void setPedidos(List<Pedido> pedidos) {
         this.pedidos = pedidos;
     }
+
 }

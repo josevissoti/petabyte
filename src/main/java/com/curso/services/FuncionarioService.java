@@ -6,6 +6,7 @@ import com.curso.repositories.FuncionarioRepository;
 import com.curso.services.exceptions.DataIntegrityViolationException;
 import com.curso.services.exceptions.ObjectNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -17,6 +18,9 @@ public class FuncionarioService {
 
     @Autowired
     private FuncionarioRepository funcionarioRepo;
+
+    @Autowired
+    private PasswordEncoder encoder;
 
     public List<FuncionarioDTO> findAll() {
         return funcionarioRepo.findAll().stream()
@@ -40,6 +44,7 @@ public class FuncionarioService {
 
     public Funcionario create(FuncionarioDTO objDto) {
         objDto.setIdPessoa(null);
+        objDto.setSenha(encoder.encode(objDto.getSenha()));
         validaPorCPFeEmail(objDto);
         Funcionario newObj = new Funcionario(objDto);
         return funcionarioRepo.save(newObj);

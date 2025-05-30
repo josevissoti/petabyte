@@ -7,6 +7,7 @@ import com.curso.domains.enums.StatusPedido;
 import com.curso.domains.enums.TipoEntrega;
 import com.curso.repositories.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.math.BigDecimal;
@@ -37,6 +38,9 @@ public class DBService {
     @Autowired
     private VeiculoRepository veiculoRepo;
 
+    @Autowired
+    private PasswordEncoder encoder;
+
     public void initDB() {
 
         CategoriaComponente categoriaComponente01 = new CategoriaComponente(null, "SSD");
@@ -51,11 +55,11 @@ public class DBService {
         Componente componente02 = new Componente(null, "SSD Kingston 1TB", "A400", LocalDate.of(2020, Month.APRIL, 21), new BigDecimal("219.99"), new BigDecimal("10.00"), 400, categoriaComponente01, fornecedor03, Status.ATIVO, Condicao.SEMIUSADO);
         Componente componente03 = new Componente(null, "Ryzen 5", "5600G", LocalDate.of(2019, Month.JULY, 12), new BigDecimal("1199.99"), new BigDecimal("15.50"), 267, categoriaComponente02, fornecedor01, Status.ATIVO, Condicao.USADO);
 
-        Usuario usuario01 = new Usuario(null, "Ronaldo", "29850950005", LocalDate.of(1982, Month.NOVEMBER, 5), "Ronaldo@gmail.com", "Ronaldo123");
-        Usuario usuario02 = new Usuario(null, "Giovana", "99763020026", LocalDate.of(2000, Month.FEBRUARY, 23), "Giovana@gmail.com", "Giovana123");
+        Usuario usuario01 = new Usuario(null, "Ronaldo", "29850950005", LocalDate.of(1982, Month.NOVEMBER, 5), "Ronaldo@gmail.com", encoder.encode("Ronaldo123"));
+        Usuario usuario02 = new Usuario(null, "Giovana", "99763020026", LocalDate.of(2000, Month.FEBRUARY, 23), "Giovana@gmail.com", encoder.encode("Giovana123"));
 
-        Funcionario funcionario01 = new Funcionario(null, "Leandro", "26537686075", LocalDate.of(1974, Month.OCTOBER, 18), "Leando@gmail.com", "Leando123");
-        Funcionario funcionario02 = new Funcionario(null, "Claudia", "31075052009", LocalDate.of(1985, Month.JULY, 13), "Claudia@gmail.com", "Claudia123");
+        Funcionario funcionario01 = new Funcionario(null, "Leandro", "26537686075", LocalDate.of(1974, Month.OCTOBER, 18), "Leando@gmail.com", encoder.encode("Leando123"));
+        Funcionario funcionario02 = new Funcionario(null, "Claudia", "31075052009", LocalDate.of(1985, Month.JULY, 13), "Claudia@gmail.com", encoder.encode("Claudia123"));
 
         Pedido pedido01 = new Pedido(null, "PedidoGrande", LocalDate.of(2025, Month.APRIL, 1), TipoEntrega.NORMAL, StatusPedido.CAMINHO, usuario01, funcionario01);
         Pedido pedido02 = new Pedido(null, "PedidoPequeno", LocalDate.of(2025, Month.MARCH, 21), TipoEntrega.EXPRESSO, StatusPedido.ENTREGUE, usuario02, funcionario02);
