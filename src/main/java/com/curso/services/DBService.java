@@ -58,7 +58,7 @@ public class DBService {
         Usuario usuario01 = new Usuario(null, "Ronaldo", "29850950005", LocalDate.of(1982, Month.NOVEMBER, 5), "Ronaldo@gmail.com", encoder.encode("Ronaldo123"));
         Usuario usuario02 = new Usuario(null, "Giovana", "99763020026", LocalDate.of(2000, Month.FEBRUARY, 23), "Giovana@gmail.com", encoder.encode("Giovana123"));
 
-        Funcionario funcionario01 = new Funcionario(null, "Leandro", "26537686075", LocalDate.of(1974, Month.OCTOBER, 18), "Leando@gmail.com", encoder.encode("Leando123"));
+        Funcionario funcionario01 = new Funcionario(null, "Leandro", "26537686075", LocalDate.of(1974, Month.OCTOBER, 18), "Leandro@gmail.com", encoder.encode("Leandro123"));
         Funcionario funcionario02 = new Funcionario(null, "Claudia", "31075052009", LocalDate.of(1985, Month.JULY, 13), "Claudia@gmail.com", encoder.encode("Claudia123"));
 
         Pedido pedido01 = new Pedido(null, "PedidoGrande", LocalDate.of(2025, Month.APRIL, 1), TipoEntrega.NORMAL, StatusPedido.CAMINHO, usuario01, funcionario01);
